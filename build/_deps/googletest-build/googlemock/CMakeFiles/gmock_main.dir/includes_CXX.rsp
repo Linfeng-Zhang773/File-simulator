@@ -1,0 +1,1 @@
+-isystem "C:/Users/linfe/cs8/File-simulator/build/_deps/googletest-src/googlemock/include" -isystem "C:/Users/linfe/cs8/File-simulator/build/_deps/googletest-src/googlemock" -isystem "C:/Users/linfe/cs8/File-simulator/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/linfe/cs8/File-simulator/build/_deps/googletest-src/googletest"

@@ -1,0 +1,15 @@
+
+#ifndef SFML_PROJECT_STATESENUM_H
+#define SFML_PROJECT_STATESENUM_H
+
+enum statesEnum
+{
+    HOVERED,
+    CLICKED,
+    HIDDEN
+
+    ,
+    LAST_STATE
+};
+
+#endif // SFML_PROJECT_STATESENUM_H
