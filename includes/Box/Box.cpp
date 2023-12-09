@@ -31,7 +31,7 @@ void Box::update()
 {
     if (checkState(HOVERED))
     {
-        box.setFillColor(sf::Color::Blue);
+        box.setFillColor(sf::Color(230,230,250));
     }
     else
     {

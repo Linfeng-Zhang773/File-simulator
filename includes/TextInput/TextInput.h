@@ -25,7 +25,7 @@ private:
 
 public:
     TextInput() = default;
-    TextInput(const sf::Vector2f& size, const sf::Vector2f& labelPosition,int count);
+    TextInput(const sf::Vector2f& size, const sf::Vector2f& labelPosition, int count);
     ~TextInput() = default;
 
     // from the sf::Drawable class

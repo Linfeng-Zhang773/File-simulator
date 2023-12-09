@@ -77,9 +77,12 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     }
     if (KeyBoardShortCuts::isUndo())
     {
+        // std::cout << "GO in" << std::endl;
+        // std::cout << History::size() << std::endl;
         if (History::size() != 0)
         {
             std::string s = History::topHistory().snapshot.data;
+            std::cout << s << std::endl;
             History::popHistory();
             mulText.clear();
             for (char c : s)
@@ -115,17 +118,43 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     mulText.push(l);
     // std::cout << s << std::endl;
 
-//=============================Logic about check commands==========================
+    //=============================Logic about check commands==========================
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
         std::vector<std::string> v2 = extractStrings(s);
-        // for (int i = 0; i < v2.size(); ++i)
-        // {
-        //     std::cout << v2[i] << std::endl;
-        // }
-        if(v2[0]=="cd")
+        // v2[0]=cd or ..., v2[1] = filepath
+        //  for (int i = 0; i < v2.size(); ++i)
+        //  {
+        //      std::cout << v2[i] << std::endl;
+        //  }
+        if (v2[0] == "cd")
         {
-            //v2[1] is the filepath do logic
+            // open file logic
+            // v2[1] is the filepath do logic
+        }
+        else if (v2[0] == "createUnder")
+        {
+            // create new file logic
+        }
+        else if (v2[0] == "delete")
+        {
+            // delete file logic
+        }
+        else if (v2[0] == "rename")
+        {
+            // rename file logic
+        }
+        else if (v2[0] == "move")
+        {
+            // move file logic
+        }
+        else if (v2[0] == "search")
+        {
+            // search filename logic
+        }
+        else
+        {
+            // save file modification logic
         }
     }
 }
