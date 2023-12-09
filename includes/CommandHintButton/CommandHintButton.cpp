@@ -19,40 +19,46 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->show.setFillColor(sf::Color::Black);
     this->show.setPosition({pos.x + 5, pos.y + 5});
 
+    this->createCommand.setString("How to create file: createUnder folder");
+    this->createCommand.setCharacterSize(24);
+    this->createCommand.setFont(Fonts::getFont(OPEN_SANS));
+    this->createCommand.setFillColor(sf::Color::Blue);
+    this->createCommand.setPosition({pos.x, pos.y + 220});
+
     this->openCommand.setString("How to Open file: cd filepath");
     this->openCommand.setCharacterSize(24);
     this->openCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->openCommand.setFillColor(sf::Color::Green);
+    this->openCommand.setFillColor(sf::Color::Blue);
     this->openCommand.setPosition({pos.x, pos.y + 40});
 
     this->deleteCommand.setString("How to Delete file: delete filepath");
     this->deleteCommand.setCharacterSize(24);
     this->deleteCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->deleteCommand.setFillColor(sf::Color::Green);
+    this->deleteCommand.setFillColor(sf::Color::Blue);
     this->deleteCommand.setPosition({pos.x, pos.y + 70});
 
     this->renameCommand.setString("How to Rename file: rename filepath");
     this->renameCommand.setCharacterSize(24);
     this->renameCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->renameCommand.setFillColor(sf::Color::Green);
+    this->renameCommand.setFillColor(sf::Color::Blue);
     this->renameCommand.setPosition({pos.x, pos.y + 100});
 
-    this->moveCommand.setString("How to move file: move filepath");
+    this->moveCommand.setString("How to move file: move filename to filepath");
     this->moveCommand.setCharacterSize(24);
     this->moveCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->moveCommand.setFillColor(sf::Color::Green);
+    this->moveCommand.setFillColor(sf::Color::Blue);
     this->moveCommand.setPosition({pos.x, pos.y + 130});
 
     this->searchCommand.setString("How to search file: search filename");
     this->searchCommand.setCharacterSize(24);
     this->searchCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->searchCommand.setFillColor(sf::Color::Green);
+    this->searchCommand.setFillColor(sf::Color::Blue);
     this->searchCommand.setPosition({pos.x, pos.y + 160});
 
-    this->saveCommand.setString("How to save file: save to filepath");
+    this->saveCommand.setString("How to save file: save filename to filepath");
     this->saveCommand.setCharacterSize(24);
     this->saveCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->saveCommand.setFillColor(sf::Color::Green);
+    this->saveCommand.setFillColor(sf::Color::Blue);
     this->saveCommand.setPosition({pos.x, pos.y + 190});
 }
 
@@ -71,6 +77,7 @@ void CommandHintButton::setPosistion(const sf::Vector2f& pos)
     this->moveCommand.setPosition({pos.x + 80, pos.y + 80});
     this->searchCommand.setPosition({pos.x + 100, pos.y + 100});
     this->saveCommand.setPosition({pos.x + 120, pos.y + 120});
+    this->createCommand.setPosition({pos.x, pos.y + 220});
 }
 void CommandHintButton::addEventHandler(sf::RenderWindow& window, sf::Event event)
 {
@@ -100,6 +107,7 @@ void CommandHintButton::draw(sf::RenderTarget& window, sf::RenderStates states) 
         window.draw(this->moveCommand);
         window.draw(this->searchCommand);
         window.draw(this->saveCommand);
+        window.draw(this->createCommand);
     }
 }
 SnapShot& CommandHintButton::getSnapshot() {}

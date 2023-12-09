@@ -1,5 +1,7 @@
+// #include "includes/Helpers/helpers.h"
 #include "includes/Application/Application.h"
 #include "includes/Background/Background.h"
+#include "includes/BuildFileTree/BuildFileTree.h"
 #include "includes/CommandHintButton/CommandHintButton.h"
 #include "includes/FileTree/FileTree.h"
 #include "includes/InputBox/InputBox.h"
@@ -9,6 +11,13 @@
 #include <SFML/Graphics.hpp>
 int main()
 {
+    // test for string split
+    //   std::string s = "cd filename filepat|h";
+    //  std::vector<std::string> v = extractStrings(s);
+    //  for (int i = 0; i < v.size(); ++i)
+    //  {
+    //      std::cout << v[i] << std::endl;
+    //  }
     Application app;
     Background wallpaper({0, 0});
     TextInput commandLine({800, 100}, {430, 850}, 670);
@@ -17,7 +26,7 @@ int main()
     Menu size;
     Menu Font;
     Menu position;
-    CommandHintButton button({160, 30}, {50, 400});
+    CommandHintButton button({160, 30}, {20, 400});
 
     commandLine.setLabel("Command Line: ");
     commandLine.setLabelPosition({110, 850});
@@ -65,18 +74,18 @@ int main()
     app.addComponent(commandLine);
     app.addComponent(FileInput);
     app.addComponent(fileMenu);
-    FileTree fileTree;
-    fileTree.push(" ", "Directory 1", true);
-    fileTree.push("Directory 1", "file 1", false);
-    // fileTree.push("222", "333", false); // still some bugs...===
-    fileTree.push("Directory 1", "file 2", false);
-    fileTree.push("Directory 1", "Directory 2", true);
-    fileTree.push("Directory 2", "file 3", false);
-    fileTree.push("Directory 2", "file 4", false);
-    fileTree.push("Directory 2", "file 5", false);
-    fileTree.push("Directory 2", "Directory 3", true);
-    fileTree.push("Directory 3", "file 6", false);
-    fileTree.push("Directory 3", "file 7", false);
+    // FileTree fileTree;
+    // fileTree.push(" ", "Directory 1", true);
+    // fileTree.push("Directory 1", "file 1", false);
+    // // fileTree.push("222", "333", false); // still some bugs...===
+    // fileTree.push("Directory 1", "file 2", false);
+    // fileTree.push("Directory 1", "Directory 2", true);
+    // fileTree.push("Directory 2", "file 3", false);
+    // fileTree.push("Directory 2", "file 4", false);
+    // fileTree.push("Directory 2", "file 5", false);
+    // fileTree.push("Directory 2", "Directory 3", true);
+    // fileTree.push("Directory 3", "file 6", false);
+    // fileTree.push("Directory 3", "file 7", false);
     // TO DO: can not have multiple files???
 
     // FileItem item = {"assets/folder.png", "1111", {130, 50}, {0, 0}};
@@ -86,8 +95,8 @@ int main()
     // FileItem item2 = {"assets/folder.png", "2222", {130, 50}, {100, 100}};
     // item2.setPos({100, 100});
     // FileNode node2(item2);
-
-    app.addComponent(fileTree);
+    BuildFileTree build("../../Files/Pathinfo.txt");
+    app.addComponent(build.getFileTree());
     // app.addComponent(node2);
 
     app.run();

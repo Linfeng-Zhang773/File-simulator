@@ -96,7 +96,6 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     {
 
         Letter l(word[0]);
-        // set position
         l.setFillColor(sf::Color::Black);
 
         l.setPosition(count / 1.5, this->box.getBox().getPosition().y);
@@ -114,6 +113,21 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     l.setPosition(count / 1.5, this->box.getBox().getPosition().y);
     this->count += CHARACTER_SIZE;
     mulText.push(l);
+    // std::cout << s << std::endl;
+
+//=============================Logic about check commands==========================
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+    {
+        std::vector<std::string> v2 = extractStrings(s);
+        // for (int i = 0; i < v2.size(); ++i)
+        // {
+        //     std::cout << v2[i] << std::endl;
+        // }
+        if(v2[0]=="cd")
+        {
+            //v2[1] is the filepath do logic
+        }
+    }
 }
 void TextInput::update()
 {

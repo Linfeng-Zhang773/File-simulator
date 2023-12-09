@@ -128,11 +128,26 @@ CMakeFiles/main.dir/includes/Box/Box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/Box/Box.cpp.s"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\linfe\cs8\File-simulator\includes\Box\Box.cpp -o CMakeFiles\main.dir\includes\Box\Box.cpp.s
 
+CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.cpp
+CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj -MF CMakeFiles\main.dir\includes\BuildFileTree\BuildFileTree.cpp.obj.d -o CMakeFiles\main.dir\includes\BuildFileTree\BuildFileTree.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\BuildFileTree\BuildFileTree.cpp
+
+CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\linfe\cs8\File-simulator\includes\BuildFileTree\BuildFileTree.cpp > CMakeFiles\main.dir\includes\BuildFileTree\BuildFileTree.cpp.i
+
+CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\linfe\cs8\File-simulator\includes\BuildFileTree\BuildFileTree.cpp -o CMakeFiles\main.dir\includes\BuildFileTree\BuildFileTree.cpp.s
+
 CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/CommandHintButton/CommandHintButton.cpp
 CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj -MF CMakeFiles\main.dir\includes\CommandHintButton\CommandHintButton.cpp.obj.d -o CMakeFiles\main.dir\includes\CommandHintButton\CommandHintButton.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\CommandHintButton\CommandHintButton.cpp
 
 CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.i: cmake_force
@@ -147,7 +162,7 @@ CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj: CMakeFiles/main.dir/flag
 CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/FileItem/FileItem.cpp
 CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj -MF CMakeFiles\main.dir\includes\FileItem\FileItem.cpp.obj.d -o CMakeFiles\main.dir\includes\FileItem\FileItem.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\FileItem\FileItem.cpp
 
 CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.i: cmake_force
@@ -162,7 +177,7 @@ CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj: CMakeFiles/main.dir/flag
 CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.cpp
 CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj -MF CMakeFiles\main.dir\includes\FileNode\FileNode.cpp.obj.d -o CMakeFiles\main.dir\includes\FileNode\FileNode.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\FileNode\FileNode.cpp
 
 CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.i: cmake_force
@@ -173,11 +188,26 @@ CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.s"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\linfe\cs8\File-simulator\includes\FileNode\FileNode.cpp -o CMakeFiles\main.dir\includes\FileNode\FileNode.cpp.s
 
+CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.cpp
+CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj -MF CMakeFiles\main.dir\includes\FileReader\FileReader.cpp.obj.d -o CMakeFiles\main.dir\includes\FileReader\FileReader.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\FileReader\FileReader.cpp
+
+CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\linfe\cs8\File-simulator\includes\FileReader\FileReader.cpp > CMakeFiles\main.dir\includes\FileReader\FileReader.cpp.i
+
+CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\linfe\cs8\File-simulator\includes\FileReader\FileReader.cpp -o CMakeFiles\main.dir\includes\FileReader\FileReader.cpp.s
+
 CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.cpp
 CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj -MF CMakeFiles\main.dir\includes\FileTree\FileTree.cpp.obj.d -o CMakeFiles\main.dir\includes\FileTree\FileTree.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\FileTree\FileTree.cpp
 
 CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.i: cmake_force
@@ -192,7 +222,7 @@ CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.cpp
 CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj -MF CMakeFiles\main.dir\includes\Fonts\Fonts.cpp.obj.d -o CMakeFiles\main.dir\includes\Fonts\Fonts.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\Fonts\Fonts.cpp
 
 CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.i: cmake_force
@@ -207,7 +237,7 @@ CMakeFiles/main.dir/includes/History/History.cpp.obj: CMakeFiles/main.dir/flags.
 CMakeFiles/main.dir/includes/History/History.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/History/History.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/History/History.cpp
 CMakeFiles/main.dir/includes/History/History.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/includes/History/History.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/includes/History/History.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/History/History.cpp.obj -MF CMakeFiles\main.dir\includes\History\History.cpp.obj.d -o CMakeFiles\main.dir\includes\History\History.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\History\History.cpp
 
 CMakeFiles/main.dir/includes/History/History.cpp.i: cmake_force
@@ -222,7 +252,7 @@ CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj: CMakeFiles/main.dir/flag
 CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/InputBox/InputBox.cpp
 CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj -MF CMakeFiles\main.dir\includes\InputBox\InputBox.cpp.obj.d -o CMakeFiles\main.dir\includes\InputBox\InputBox.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\InputBox\InputBox.cpp
 
 CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.i: cmake_force
@@ -237,7 +267,7 @@ CMakeFiles/main.dir/includes/Item/Item.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/Item/Item.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/Item/Item.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/Item/Item.cpp
 CMakeFiles/main.dir/includes/Item/Item.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/includes/Item/Item.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/includes/Item/Item.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/Item/Item.cpp.obj -MF CMakeFiles\main.dir\includes\Item\Item.cpp.obj.d -o CMakeFiles\main.dir\includes\Item\Item.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\Item\Item.cpp
 
 CMakeFiles/main.dir/includes/Item/Item.cpp.i: cmake_force
@@ -252,7 +282,7 @@ CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj: CMakeFiles/main.dir/flag
 CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/ItemList/ItemList.cpp
 CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.obj -MF CMakeFiles\main.dir\includes\ItemList\ItemList.cpp.obj.d -o CMakeFiles\main.dir\includes\ItemList\ItemList.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\ItemList\ItemList.cpp
 
 CMakeFiles/main.dir/includes/ItemList/ItemList.cpp.i: cmake_force
@@ -267,7 +297,7 @@ CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj: CMakeF
 CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp
 CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.obj -MF CMakeFiles\main.dir\includes\KeyBoardShortCuts\KeyBoardShortCuts.cpp.obj.d -o CMakeFiles\main.dir\includes\KeyBoardShortCuts\KeyBoardShortCuts.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\KeyBoardShortCuts\KeyBoardShortCuts.cpp
 
 CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.i: cmake_force
@@ -282,7 +312,7 @@ CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj: CMakeFiles/main.dir/flags.ma
 CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/Letter/Letter.cpp
 CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj -MF CMakeFiles\main.dir\includes\Letter\Letter.cpp.obj.d -o CMakeFiles\main.dir\includes\Letter\Letter.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\Letter\Letter.cpp
 
 CMakeFiles/main.dir/includes/Letter/Letter.cpp.i: cmake_force
@@ -297,7 +327,7 @@ CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.cpp
 CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj -MF CMakeFiles\main.dir\includes\Menu\Menu.cpp.obj.d -o CMakeFiles\main.dir\includes\Menu\Menu.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\Menu\Menu.cpp
 
 CMakeFiles/main.dir/includes/Menu/Menu.cpp.i: cmake_force
@@ -312,7 +342,7 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: CMakeFiles/main.dir/flags.
 CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/MenuBar/MenuBar.cpp
 CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj -MF CMakeFiles\main.dir\includes\MenuBar\MenuBar.cpp.obj.d -o CMakeFiles\main.dir\includes\MenuBar\MenuBar.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\MenuBar\MenuBar.cpp
 
 CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.i: cmake_force
@@ -327,7 +357,7 @@ CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj: CMakeFiles/main.dir/fl
 CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/MultiText/MultiText.cpp
 CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj -MF CMakeFiles\main.dir\includes\MultiText\MultiText.cpp.obj.d -o CMakeFiles\main.dir\includes\MultiText\MultiText.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\MultiText\MultiText.cpp
 
 CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.i: cmake_force
@@ -342,7 +372,7 @@ CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj: CMakeFiles/main.dir/flag
 CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.cpp
 CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj -MF CMakeFiles\main.dir\includes\SnapShot\SnapShot.cpp.obj.d -o CMakeFiles\main.dir\includes\SnapShot\SnapShot.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\SnapShot\SnapShot.cpp
 
 CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.i: cmake_force
@@ -357,7 +387,7 @@ CMakeFiles/main.dir/includes/States/States.cpp.obj: CMakeFiles/main.dir/flags.ma
 CMakeFiles/main.dir/includes/States/States.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/States/States.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/States/States.cpp
 CMakeFiles/main.dir/includes/States/States.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/includes/States/States.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/includes/States/States.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/States/States.cpp.obj -MF CMakeFiles\main.dir\includes\States\States.cpp.obj.d -o CMakeFiles\main.dir\includes\States\States.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\States\States.cpp
 
 CMakeFiles/main.dir/includes/States/States.cpp.i: cmake_force
@@ -372,7 +402,7 @@ CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: CMakeFiles/main.dir/fl
 CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/TextInput/TextInput.cpp
 CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj -MF CMakeFiles\main.dir\includes\TextInput\TextInput.cpp.obj.d -o CMakeFiles\main.dir\includes\TextInput\TextInput.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\TextInput\TextInput.cpp
 
 CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.i: cmake_force
@@ -387,7 +417,7 @@ CMakeFiles/main.dir/includes/stub/stub.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/stub/stub.cpp
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/includes/stub/stub.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/includes/stub/stub.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/stub/stub.cpp.obj -MF CMakeFiles\main.dir\includes\stub\stub.cpp.obj.d -o CMakeFiles\main.dir\includes\stub\stub.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\stub\stub.cpp
 
 CMakeFiles/main.dir/includes/stub/stub.cpp.i: cmake_force
@@ -404,9 +434,11 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/includes/Application/Application.cpp.obj" \
 "CMakeFiles/main.dir/includes/Background/Background.cpp.obj" \
 "CMakeFiles/main.dir/includes/Box/Box.cpp.obj" \
+"CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj" \
 "CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj" \
 "CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj" \
 "CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj" \
+"CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj" \
 "CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj" \
 "CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj" \
 "CMakeFiles/main.dir/includes/History/History.cpp.obj" \
@@ -430,9 +462,11 @@ bin/main.exe: CMakeFiles/main.dir/main.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/Application/Application.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/Background/Background.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/Box/Box.cpp.obj
+bin/main.exe: CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/FileItem/FileItem.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj
+bin/main.exe: CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/FileTree/FileTree.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/History/History.cpp.obj
@@ -457,7 +491,7 @@ bin/main.exe: lib/libgtest.dll.a
 bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 bin/main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable bin\main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable bin\main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -25,6 +25,12 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
+  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\BuildFileTree\\BuildFileTree.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\BuildFileTree\\BuildFileTree.cpp",
+  "file": "C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.cpp",
+  "output": "CMakeFiles/my_test.dir/includes/BuildFileTree/BuildFileTree.cpp.obj"
+},
+{
+  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\CommandHintButton\\CommandHintButton.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\CommandHintButton\\CommandHintButton.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/CommandHintButton/CommandHintButton.cpp",
   "output": "CMakeFiles/my_test.dir/includes/CommandHintButton/CommandHintButton.cpp.obj"
@@ -40,6 +46,12 @@
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\FileNode\\FileNode.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\FileNode\\FileNode.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.cpp",
   "output": "CMakeFiles/my_test.dir/includes/FileNode/FileNode.cpp.obj"
+},
+{
+  "directory": "C:/Users/linfe/cs8/File-simulator/build",
+  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\FileReader\\FileReader.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\FileReader\\FileReader.cpp",
+  "file": "C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.cpp",
+  "output": "CMakeFiles/my_test.dir/includes/FileReader/FileReader.cpp.obj"
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
@@ -157,6 +169,12 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
+  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\BuildFileTree\\BuildFileTree.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\BuildFileTree\\BuildFileTree.cpp",
+  "file": "C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.cpp",
+  "output": "CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj"
+},
+{
+  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\CommandHintButton\\CommandHintButton.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\CommandHintButton\\CommandHintButton.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/CommandHintButton/CommandHintButton.cpp",
   "output": "CMakeFiles/main.dir/includes/CommandHintButton/CommandHintButton.cpp.obj"
@@ -172,6 +190,12 @@
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\FileNode\\FileNode.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\FileNode\\FileNode.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.cpp",
   "output": "CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.obj"
+},
+{
+  "directory": "C:/Users/linfe/cs8/File-simulator/build",
+  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\FileReader\\FileReader.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\FileReader\\FileReader.cpp",
+  "file": "C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.cpp",
+  "output": "CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj"
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",

@@ -422,6 +422,33 @@ includes/Box/Box.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/Box/Box.cpp.s
 .PHONY : includes/Box/Box.cpp.s
 
+includes/BuildFileTree/BuildFileTree.obj: includes/BuildFileTree/BuildFileTree.cpp.obj
+.PHONY : includes/BuildFileTree/BuildFileTree.obj
+
+# target to build an object file
+includes/BuildFileTree/BuildFileTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/BuildFileTree/BuildFileTree.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.obj
+.PHONY : includes/BuildFileTree/BuildFileTree.cpp.obj
+
+includes/BuildFileTree/BuildFileTree.i: includes/BuildFileTree/BuildFileTree.cpp.i
+.PHONY : includes/BuildFileTree/BuildFileTree.i
+
+# target to preprocess a source file
+includes/BuildFileTree/BuildFileTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/BuildFileTree/BuildFileTree.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.i
+.PHONY : includes/BuildFileTree/BuildFileTree.cpp.i
+
+includes/BuildFileTree/BuildFileTree.s: includes/BuildFileTree/BuildFileTree.cpp.s
+.PHONY : includes/BuildFileTree/BuildFileTree.s
+
+# target to generate assembly for a file
+includes/BuildFileTree/BuildFileTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/BuildFileTree/BuildFileTree.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/BuildFileTree/BuildFileTree.cpp.s
+.PHONY : includes/BuildFileTree/BuildFileTree.cpp.s
+
 includes/CommandHintButton/CommandHintButton.obj: includes/CommandHintButton/CommandHintButton.cpp.obj
 .PHONY : includes/CommandHintButton/CommandHintButton.obj
 
@@ -502,6 +529,33 @@ includes/FileNode/FileNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/FileNode/FileNode.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/FileNode/FileNode.cpp.s
 .PHONY : includes/FileNode/FileNode.cpp.s
+
+includes/FileReader/FileReader.obj: includes/FileReader/FileReader.cpp.obj
+.PHONY : includes/FileReader/FileReader.obj
+
+# target to build an object file
+includes/FileReader/FileReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/FileReader/FileReader.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.obj
+.PHONY : includes/FileReader/FileReader.cpp.obj
+
+includes/FileReader/FileReader.i: includes/FileReader/FileReader.cpp.i
+.PHONY : includes/FileReader/FileReader.i
+
+# target to preprocess a source file
+includes/FileReader/FileReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/FileReader/FileReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.i
+.PHONY : includes/FileReader/FileReader.cpp.i
+
+includes/FileReader/FileReader.s: includes/FileReader/FileReader.cpp.s
+.PHONY : includes/FileReader/FileReader.s
+
+# target to generate assembly for a file
+includes/FileReader/FileReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/FileReader/FileReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/FileReader/FileReader.cpp.s
+.PHONY : includes/FileReader/FileReader.cpp.s
 
 includes/FileTree/FileTree.obj: includes/FileTree/FileTree.cpp.obj
 .PHONY : includes/FileTree/FileTree.obj
@@ -968,6 +1022,9 @@ help:
 	@echo ... includes/Box/Box.obj
 	@echo ... includes/Box/Box.i
 	@echo ... includes/Box/Box.s
+	@echo ... includes/BuildFileTree/BuildFileTree.obj
+	@echo ... includes/BuildFileTree/BuildFileTree.i
+	@echo ... includes/BuildFileTree/BuildFileTree.s
 	@echo ... includes/CommandHintButton/CommandHintButton.obj
 	@echo ... includes/CommandHintButton/CommandHintButton.i
 	@echo ... includes/CommandHintButton/CommandHintButton.s
@@ -977,6 +1034,9 @@ help:
 	@echo ... includes/FileNode/FileNode.obj
 	@echo ... includes/FileNode/FileNode.i
 	@echo ... includes/FileNode/FileNode.s
+	@echo ... includes/FileReader/FileReader.obj
+	@echo ... includes/FileReader/FileReader.i
+	@echo ... includes/FileReader/FileReader.s
 	@echo ... includes/FileTree/FileTree.obj
 	@echo ... includes/FileTree/FileTree.i
 	@echo ... includes/FileTree/FileTree.s

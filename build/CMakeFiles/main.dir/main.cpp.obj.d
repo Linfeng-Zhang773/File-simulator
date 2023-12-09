@@ -249,31 +249,41 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
  C:\Users\linfe\cs8\File-simulator\includes/Background/Background.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:\Users\linfe\cs8\File-simulator\includes/CommandHintButton/CommandHintButton.h \
- C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
- C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
- C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
- C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
- C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/Mouse/MouseEvents.h \
- C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
- C:\Users\linfe\cs8\File-simulator\includes/FileTree/FileTree.h \
+ C:\Users\linfe\cs8\File-simulator\includes/BuildFileTree/BuildFileTree.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.h \
  C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.h \
  C:/Users/linfe/cs8/File-simulator/includes/FileItem/FileItem.h \
  C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
  C:/Users/linfe/cs8/File-simulator/includes/Item/Item.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIComponent.h \
  C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Mouse/MouseEvents.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iostream \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/set \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_set.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multiset.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/sstream \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/sstream.tcc \
+ C:/Users/linfe/cs8/File-simulator/includes/fileReader/FileReader.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/fstream \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/basic_file.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++io.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/fstream.tcc \
+ C:\Users\linfe\cs8\File-simulator\includes/CommandHintButton/CommandHintButton.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
+ C:\Users\linfe\cs8\File-simulator\includes/FileTree/FileTree.h \
  C:\Users\linfe\cs8\File-simulator\includes/InputBox/InputBox.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIComponent.h \
@@ -292,8 +302,6 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
  C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/sstream \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/sstream.tcc \
  C:/Users/linfe/cs8/File-simulator/includes/History/History.h \
  C:/Users/linfe/cs8/File-simulator/includes/HistoryNode/HistoryNode.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \

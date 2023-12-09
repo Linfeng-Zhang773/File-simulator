@@ -13,6 +13,7 @@ private:
     Box button;
     sf::Text show;
     sf::Text openCommand;
+    sf::Text createCommand;
     sf::Text deleteCommand;
     sf::Text renameCommand;
     sf::Text moveCommand;

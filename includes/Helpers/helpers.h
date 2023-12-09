@@ -46,4 +46,28 @@ inline std::vector<std::string> extractWords(const std::string& input)
 
     return result;
 }
+
+inline std::vector<std::string> extractStrings(const std::string& str)
+{
+    std::vector<std::string> res;
+    std::string concat = "";
+    for (const auto& s : str)
+    {
+        if (s == ' ') 
+        {
+            res.push_back(concat);
+            concat = "";
+            continue;
+        }
+        concat += s;
+    }
+    std::string withoutBar = "";
+    for(int i = 0; i < concat.length(); ++i)
+    {
+        if(i == concat.length() - 2) continue;
+        withoutBar += concat[i];
+    }
+    res.push_back(withoutBar);
+    return res;
+}
 #endif
