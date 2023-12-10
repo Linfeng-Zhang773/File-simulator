@@ -1,5 +1,8 @@
 #include "typingBox.h"
 std::string TypingBox::content = "";
+sf::Color TypingBox::color = sf::Color::Black;
+int TypingBox::font_Size = 30;
+fontEnum TypingBox::ENUM = OPEN_SANS;
 
 TypingBox::TypingBox(int fontSize, sf::Vector2f boxSize, sf::Vector2f position, sf::Color textColor, sf::Color boxColor, bool selected, bool isFileInput, std::string textString, bool needNewLine)
 {
@@ -15,6 +18,12 @@ TypingBox::TypingBox(int fontSize, sf::Vector2f boxSize, sf::Vector2f position, 
     inputText.setFillColor(textColor);
     inputText.setPosition(position);
     isSelected = selected;
+
+    this->label.setString("");
+    this->label.setCharacterSize(50);
+    this->label.setFillColor(sf::Color::Red);
+    this->label.setFont(Fonts::getFont(OPEN_SANS));
+    this->label.setPosition({0, 0});
 
     text = textString;
     initialTextLen = textString.length();
@@ -42,6 +51,14 @@ void TypingBox::setText(std::string str)
     inputText.setString(text);
 }
 
+void TypingBox::setLabel(std::string s)
+{
+    this->label.setString(s);
+}
+void TypingBox::setLabelPos(sf::Vector2f pos)
+{
+    this->label.setPosition(pos);
+}
 void TypingBox::setFont(sf::Font& fonts)
 {
     inputText.setFont(fonts);
@@ -50,6 +67,11 @@ void TypingBox::setFont(sf::Font& fonts)
 void TypingBox::setPosition(sf::Vector2f point)
 {
     inputText.setPosition(point);
+}
+
+void TypingBox::setCharacter(int size)
+{
+    inputText.setCharacterSize(size);
 }
 
 void TypingBox::setLimit(bool flag)
@@ -133,7 +155,7 @@ void TypingBox::deleteLastChar()
 
 void TypingBox::inputLogic(int charTyped)
 {
-    int CHAR_DIVIDE = 14;
+    int CHAR_DIVIDE = 17;
 
     if (charTyped != DELETE_KEY && charTyped != ENTER_KEY && charTyped != ESCAPE_KEY)
     {
@@ -195,6 +217,7 @@ void TypingBox::draw(sf::RenderTarget& window, sf::RenderStates states) const
 
     window.draw(rectangle);
     window.draw(inputText);
+    window.draw(label);
 }
 
 // from EventHandler
@@ -205,17 +228,98 @@ void TypingBox::addEventHandler(sf::RenderWindow& window, sf::Event event)
 }
 void TypingBox::update()
 {
-    
-    // enter from command line
+    // use bunch of logics to detect every command and keeping updating
+    //  enter from command line
     if (this->selected() && sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) && !this->isFileInput)
     {
+        std::vector<std::string> v2 = extractStrings(inputText.getString());
         // read the file, store the stuff in content
-        TypingBox::content = "works";
+        // TypingBox::content = "works";
         // type in cd dddd/file_1 and press enter then you do file operation(load the content, and then)
+        if (v2[0] == "cd")
+        {
+
+            // v2[1] is Directory_1/Directory_2/file_7
+            //  cd Directory_1/Directory_2/file_7
+            std::string name = extractFileName(v2[1]);
+            // std::cout << "filename is: " << name << std::endl;
+            std::string path = "../../Files/" + name;
+            // std::cout << "filepath is: " << path << std::endl;
+            // detect file_7(if doesn't exist, new window with error message)
+            //  open file logic
+            //  s = file_7 + ".txt"
+            // passing s as filepath into std::string ReadFile(std::string filepath);
+            // label.setString(file_7)
+            // then read file7_metadata.txt(get all the metadata)
+            // set to text.set(...)
+            //  v2[1] is the filepath do logic
+            OpenLogic(path);
+        }
     }
     if (TypingBox::content.length() != 0 && this->isFileInput)
     {
         this->setTextWithNoLimit(content);
+        this->setColor(color);
+
+        this->setCharacter(font_Size);
         TypingBox::content = "";
+        this->setFont(Fonts::getFont(TypingBox::ENUM));
+
+       
     }
+}
+
+void TypingBox::OpenLogic(std::string filepath)
+{
+    FileReader fileReader;
+    std::string newPath = filepath.substr(0, filepath.length() - 1) + ".txt";
+    TypingBox::content = fileReader.ReadFile(newPath);
+    std::string metaPath = filepath.substr(0, filepath.length() - 1) + "_meta.txt";
+    std::vector<std::string> metaData = fileReader.ReadMetaData(metaPath);
+    // meta[0] color
+    // meta[1] size
+    // meta[2] font
+    // meta[3] left/middle/right
+
+    // std::cout << "metaData[0] now is" << metaData[0] << "11" << std::endl;
+
+    if (metaData[0] == "Black")
+    {
+        // std::cout << "equal";
+        TypingBox::color = sf::Color::Black;
+    }
+    else if (metaData[0] == "Blue")
+    {
+        TypingBox::color = sf::Color::Blue;
+    }
+    else if (metaData[0] == "Red")
+    {
+        TypingBox::color = sf::Color::Red;
+    }
+    if (metaData[1] == "20")
+    {
+        TypingBox::font_Size = 20;
+    }
+    else if (metaData[1] == "25")
+    {
+        TypingBox::font_Size = 25;
+    }
+    else if (metaData[1] == "30")
+    {
+        TypingBox::font_Size = 30;
+    }
+    if (metaData[2] == "Arial")
+    {
+        TypingBox::ENUM = OPEN_SANS;
+    }
+    else if (metaData[2] == "Comfortaa")
+    {
+        TypingBox::ENUM = COMFOR;
+    }
+    else if (metaData[2] == "TimesNewRoman")
+    {
+        TypingBox::ENUM = TIMES;
+    }
+
+   
 }

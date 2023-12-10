@@ -301,31 +301,8 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
  C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.h \
  C:\Users\linfe\cs8\File-simulator\includes/TextInput/TextInput.h \
- C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
- C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
- C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
- C:/Users/linfe/cs8/File-simulator/includes/History/History.h \
- C:/Users/linfe/cs8/File-simulator/includes/HistoryNode/HistoryNode.h \
- C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
- C:/Users/linfe/cs8/File-simulator/includes/KeyBoardShortCuts/KeyBoardShortCuts.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stack \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/deque \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_deque.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/deque.tcc \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_stack.h \
- C:/Users/linfe/cs8/File-simulator/includes/HistoryNode/HistoryNode.h \
- C:/Users/linfe/cs8/File-simulator/includes/KeyBoardShortCuts/KeyBoardShortCuts.h \
- C:/Users/linfe/cs8/File-simulator/includes/MultiText/MultiText.h \
- C:/Users/linfe/cs8/File-simulator/includes/Letter/Letter.h \
- C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
- C:/Users/linfe/cs8/File-simulator/includes/TheIterator/TheIterator.h \
- C:/Users/linfe/cs8/File-simulator/includes/Letter/Letter.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/list \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_list.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocated_ptr.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/list.tcc \
  C:\Users\linfe\cs8\File-simulator\includes/TypingBox/typingBox.h \
  C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
- C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h
+ C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h

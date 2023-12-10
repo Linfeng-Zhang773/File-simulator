@@ -2,7 +2,9 @@
 #define TYPINGBOX_H
 // Text Input commponent
 #include "../FileReader/FileReader.h"
+#include "../Fonts/Fonts.h"
 #include "../GUIcomponent/GUIcomponent.h"
+#include "../Helpers/helpers.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
@@ -24,7 +26,12 @@ private:
     bool hasLimit;
     bool needLine;
     int limit;
+    sf::Text label;
     sf::RectangleShape rectangle;
+
+    static sf::Color color;
+    static int font_Size;
+    static fontEnum ENUM;
 
     void deleteLastChar();
 
@@ -34,6 +41,9 @@ public:
     TypingBox() = default;
     TypingBox(int fontSize, sf::Vector2f boxSize, sf::Vector2f position, sf::Color textColor, sf::Color boxColor, bool selected, bool isFileInput, std::string textString = "", bool needNewLine = true);
 
+    void setLabel(std::string s);
+    void setLabelPos(sf::Vector2f pos);
+    void setCharacter(int size);
     void setFont(sf::Font& fonts);
 
     void setPosition(sf::Vector2f point);
@@ -65,6 +75,8 @@ public:
     // from SnapshotInterface
     SnapShot& getSnapshot() override {}
     void applySnapshot(const SnapShot& snapshot) override {}
+
+    void OpenLogic(std::string filepath);
 };
 
 #endif

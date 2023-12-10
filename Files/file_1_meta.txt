@@ -1,4 +1,3 @@
-Black 
-40
-Arial
-LeftAlign
+Blue
+30
+Comfortaa

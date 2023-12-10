@@ -8,7 +8,7 @@ void Fonts::loadFont(fontEnum font)
 }
 std::string Fonts::getFontPath(fontEnum font)
 {
-    std::string f[] = {"assets/arial.ttf"};
+    std::string f[] = {"assets/arial.ttf", "assets/times.ttf", "assets/comfortaa.ttf"};
     return f[font];
 }
 sf::Font& Fonts::getFont(fontEnum font)

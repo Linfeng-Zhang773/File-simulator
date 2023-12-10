@@ -42,7 +42,7 @@ std::string FileReader::ReadFile(std::string filepath)
     if (!inputFile.is_open())
     {
         std::cout << "File Open Failed" << std::endl;
-       return " ";
+        return " ";
         // Return an error code
     }
 
@@ -51,7 +51,7 @@ std::string FileReader::ReadFile(std::string filepath)
     while (std::getline(inputFile, Eachline))
     {
         std::cout << Eachline << std::endl;
-        content += (Eachline + ' ');
+        content += Eachline;
     }
 
     inputFile.close();
@@ -60,7 +60,7 @@ std::string FileReader::ReadFile(std::string filepath)
 }
 void FileReader::ModifyFile(std::string changes, std::string filepath)
 {
-   std::fstream outputFile(filepath, std::ios::out);
+    std::fstream outputFile(filepath, std::ios::out);
     if (!outputFile.is_open())
     {
         std::cerr << "File Open Failed" << std::endl;
@@ -94,7 +94,7 @@ std::vector<std::string> FileReader::ReadInfoFile(std::string filepath)
 }
 void FileReader::ModifyInfoFile(std::vector<std::string> FileInfo, std::string filepath)
 {
-     std::fstream outputFile(filepath, std::ios::out);
+    std::fstream outputFile(filepath, std::ios::out);
     if (!outputFile.is_open())
     {
         std::cout << "File Open Failed" << std::endl;

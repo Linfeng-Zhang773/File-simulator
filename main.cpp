@@ -26,59 +26,49 @@ int main()
     // TextInput commandLine(false, {800, 100}, {430, 850}, 670);
     // TextInput FileInput(true, {700, 500}, {500, 300}, 630);
     TypingBox commandLine(30, sf::Vector2f(800, 100), sf::Vector2f(420, 850), sf::Color::Red, sf::Color::White, false, false);
-    TypingBox fileInput(30, sf::Vector2f(650, 500), sf::Vector2f(550, 300), sf::Color::Red, sf::Color::White, false, true);
+    TypingBox fileInput(30, sf::Vector2f(650, 500), sf::Vector2f(580, 300), sf::Color::Red, sf::Color::White, false, true);
     commandLine.setLimit(false);
     commandLine.setFont(Fonts::getFont(OPEN_SANS));
 
     fileInput.setLimit(false);
     fileInput.setFont(Fonts::getFont(OPEN_SANS));
+    commandLine.setLabel("Command: ");
+    commandLine.setLabelPos({160, 850});
+
+    fileInput.setLabel("File: ");
+    fileInput.setLabelPos({470, 280});
 
     Menu color;
     Menu size;
     Menu Font;
-    Menu position;
+
     CommandHintButton button({160, 30}, {20, 400});
 
     // commandLine.setLabel("Command Line: ");
     // commandLine.setLabelPosition({110, 850});
     color.addItem("Red");
     color.addItem("Blue");
-    color.addItem("Yellow");
     color.addItem("Black");
-    color.addItem("White");
-    color.addItem("Green");
 
-    color.setBoxPosition({430, 0}, "Color");
+    color.setBoxPosition({630, 0}, "Color");
     color.setProperPosition();
 
     size.addItem("20");
     size.addItem("25");
     size.addItem("30");
-    size.addItem("35");
-    size.addItem("40");
-    size.addItem("45");
-    size.setBoxPosition({630, 0}, "Font Size");
+    size.setBoxPosition({830, 0}, "Font Size");
     size.setProperPosition();
 
     Font.addItem("arial");
     Font.addItem("Times New Roman");
     Font.addItem("comfortaa");
-    Font.addItem("Lexend");
-    Font.addItem("Verdana");
-    Font.setBoxPosition({830, 0}, "Fonts");
+    Font.setBoxPosition({1030, 0}, "Fonts");
     Font.setProperPosition();
-
-    position.addItem("left");
-    position.addItem("Middle");
-    position.addItem("Right");
-    position.setBoxPosition({1030, 0}, "Position");
-    position.setProperPosition();
 
     MenuBar fileMenu;
     fileMenu.addMenu(color);
     fileMenu.addMenu(size);
     fileMenu.addMenu(Font);
-    fileMenu.addMenu(position);
 
     app.addComponent(wallpaper);
     app.addComponent(button);
