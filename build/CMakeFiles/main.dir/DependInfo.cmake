@@ -30,6 +30,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.cpp" "CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj" "gcc" "CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/includes/States/States.cpp" "CMakeFiles/main.dir/includes/States/States.cpp.obj" "gcc" "CMakeFiles/main.dir/includes/States/States.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/includes/TextInput/TextInput.cpp" "CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj" "gcc" "CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj.d"
+  "C:/Users/linfe/cs8/File-simulator/includes/TypingBox/typingBox.cpp" "CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj" "gcc" "CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/includes/stub/stub.cpp" "CMakeFiles/main.dir/includes/stub/stub.cpp.obj" "gcc" "CMakeFiles/main.dir/includes/stub/stub.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
   )

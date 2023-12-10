@@ -5,10 +5,12 @@
 #include "includes/CommandHintButton/CommandHintButton.h"
 #include "includes/FileReader/FileReader.h"
 #include "includes/FileTree/FileTree.h"
+#include "includes/Fonts/Fonts.h"
 #include "includes/InputBox/InputBox.h"
 #include "includes/Menu/Menu.h"
 #include "includes/MenuBar/MenuBar.h"
 #include "includes/TextInput/TextInput.h"
+#include "includes/TypingBox/typingBox.h"
 #include <SFML/Graphics.hpp>
 int main()
 {
@@ -21,8 +23,15 @@ int main()
     //  }
     Application app;
     Background wallpaper({0, 0});
-    TextInput commandLine(false, {800, 100}, {430, 850}, 670);
-    TextInput FileInput(true, {700, 500}, {500, 300}, 630);
+    // TextInput commandLine(false, {800, 100}, {430, 850}, 670);
+    // TextInput FileInput(true, {700, 500}, {500, 300}, 630);
+    TypingBox commandLine(30, sf::Vector2f(800, 100), sf::Vector2f(420, 850), sf::Color::Red, sf::Color::White, false, false);
+    TypingBox fileInput(30, sf::Vector2f(650, 500), sf::Vector2f(550, 300), sf::Color::Red, sf::Color::White, false, true);
+    commandLine.setLimit(false);
+    commandLine.setFont(Fonts::getFont(OPEN_SANS));
+
+    fileInput.setLimit(false);
+    fileInput.setFont(Fonts::getFont(OPEN_SANS));
 
     Menu color;
     Menu size;
@@ -30,8 +39,8 @@ int main()
     Menu position;
     CommandHintButton button({160, 30}, {20, 400});
 
-    commandLine.setLabel("Command Line: ");
-    commandLine.setLabelPosition({110, 850});
+    // commandLine.setLabel("Command Line: ");
+    // commandLine.setLabelPosition({110, 850});
     color.addItem("Red");
     color.addItem("Blue");
     color.addItem("Yellow");
@@ -39,7 +48,7 @@ int main()
     color.addItem("White");
     color.addItem("Green");
 
-    color.setBoxPosition({400, 0}, "Color");
+    color.setBoxPosition({430, 0}, "Color");
     color.setProperPosition();
 
     size.addItem("20");
@@ -48,7 +57,7 @@ int main()
     size.addItem("35");
     size.addItem("40");
     size.addItem("45");
-    size.setBoxPosition({600, 0}, "Font Size");
+    size.setBoxPosition({630, 0}, "Font Size");
     size.setProperPosition();
 
     Font.addItem("arial");
@@ -56,13 +65,13 @@ int main()
     Font.addItem("comfortaa");
     Font.addItem("Lexend");
     Font.addItem("Verdana");
-    Font.setBoxPosition({800, 0}, "Fonts");
+    Font.setBoxPosition({830, 0}, "Fonts");
     Font.setProperPosition();
 
     position.addItem("left");
     position.addItem("Middle");
     position.addItem("Right");
-    position.setBoxPosition({1000,0}, "Position");
+    position.setBoxPosition({1030, 0}, "Position");
     position.setProperPosition();
 
     MenuBar fileMenu;
@@ -73,9 +82,11 @@ int main()
 
     app.addComponent(wallpaper);
     app.addComponent(button);
-    app.addComponent(commandLine);
+    // app.addComponent(commandLine);
 
     app.addComponent(fileMenu);
+    app.addComponent(commandLine);
+    app.addComponent(fileInput);
     // FileTree fileTree;
     // fileTree.push(" ", "Directory 1", true);
     // fileTree.push("Directory 1", "file 1", false);
@@ -99,7 +110,8 @@ int main()
     // FileNode node2(item2);
     BuildFileTree build("../../Files/Pathinfo.txt");
     app.addComponent(build.getFileTree());
-    app.addComponent(FileInput);
+
+    // app.addComponent(FileInput);
     // app.addComponent(node2);
     // FileReader fileReader;
     // std::string s = fileReader.ReadFile("../../Files/file_1.txt");

@@ -413,11 +413,26 @@ CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.s"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\linfe\cs8\File-simulator\includes\TextInput\TextInput.cpp -o CMakeFiles\main.dir\includes\TextInput\TextInput.cpp.s
 
+CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/TypingBox/typingBox.cpp
+CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj -MF CMakeFiles\main.dir\includes\TypingBox\typingBox.cpp.obj.d -o CMakeFiles\main.dir\includes\TypingBox\typingBox.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\TypingBox\typingBox.cpp
+
+CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\linfe\cs8\File-simulator\includes\TypingBox\typingBox.cpp > CMakeFiles\main.dir\includes\TypingBox\typingBox.cpp.i
+
+CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\linfe\cs8\File-simulator\includes\TypingBox\typingBox.cpp -o CMakeFiles\main.dir\includes\TypingBox\typingBox.cpp.s
+
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: C:/Users/linfe/cs8/File-simulator/includes/stub/stub.cpp
 CMakeFiles/main.dir/includes/stub/stub.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/includes/stub/stub.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/main.dir/includes/stub/stub.cpp.obj"
 	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/stub/stub.cpp.obj -MF CMakeFiles\main.dir\includes\stub\stub.cpp.obj.d -o CMakeFiles\main.dir\includes\stub\stub.cpp.obj -c C:\Users\linfe\cs8\File-simulator\includes\stub\stub.cpp
 
 CMakeFiles/main.dir/includes/stub/stub.cpp.i: cmake_force
@@ -453,6 +468,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj" \
 "CMakeFiles/main.dir/includes/States/States.cpp.obj" \
 "CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj" \
+"CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj" \
 "CMakeFiles/main.dir/includes/stub/stub.cpp.obj"
 
 # External object files for target main
@@ -481,17 +497,18 @@ bin/main.exe: CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/States/States.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj
+bin/main.exe: CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/includes/stub/stub.cpp.obj
 bin/main.exe: CMakeFiles/main.dir/build.make
 bin/main.exe: lib/libsfml-graphics-d.a
 bin/main.exe: lib/libsfml-window-d.a
 bin/main.exe: lib/libsfml-system-d.a
-bin/main.exe: lib/libgtest_main.a
-bin/main.exe: lib/libgtest.a
+bin/main.exe: lib/libgtest_main.dll.a
+bin/main.exe: lib/libgtest.dll.a
 bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 bin/main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable bin\main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\linfe\cs8\File-simulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable bin\main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

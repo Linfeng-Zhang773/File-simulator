@@ -13,6 +13,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <vector>
 
 class TextInput : public GUIComponent
 {
@@ -29,7 +30,12 @@ private:
     sf::Clock cursorBlinkTimer;
     static bool DrawFileInput;
     bool isFileInput;
+
     static std::string current;
+    static int FontSize;
+    static fontEnum ENUM;
+    static sf::Color theColor;
+    static sf::Vector2f thePos;
 
 public:
     TextInput() = default;

@@ -935,6 +935,33 @@ includes/TextInput/TextInput.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.s
 .PHONY : includes/TextInput/TextInput.cpp.s
 
+includes/TypingBox/typingBox.obj: includes/TypingBox/typingBox.cpp.obj
+.PHONY : includes/TypingBox/typingBox.obj
+
+# target to build an object file
+includes/TypingBox/typingBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj
+.PHONY : includes/TypingBox/typingBox.cpp.obj
+
+includes/TypingBox/typingBox.i: includes/TypingBox/typingBox.cpp.i
+.PHONY : includes/TypingBox/typingBox.i
+
+# target to preprocess a source file
+includes/TypingBox/typingBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.i
+.PHONY : includes/TypingBox/typingBox.cpp.i
+
+includes/TypingBox/typingBox.s: includes/TypingBox/typingBox.cpp.s
+.PHONY : includes/TypingBox/typingBox.s
+
+# target to generate assembly for a file
+includes/TypingBox/typingBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.s
+.PHONY : includes/TypingBox/typingBox.cpp.s
+
 includes/stub/stub.obj: includes/stub/stub.cpp.obj
 .PHONY : includes/stub/stub.obj
 
@@ -1079,6 +1106,9 @@ help:
 	@echo ... includes/TextInput/TextInput.obj
 	@echo ... includes/TextInput/TextInput.i
 	@echo ... includes/TextInput/TextInput.s
+	@echo ... includes/TypingBox/typingBox.obj
+	@echo ... includes/TypingBox/typingBox.i
+	@echo ... includes/TypingBox/typingBox.s
 	@echo ... includes/stub/stub.obj
 	@echo ... includes/stub/stub.i
 	@echo ... includes/stub/stub.s

@@ -285,6 +285,7 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
  C:\Users\linfe\cs8\File-simulator\includes/FileReader/FileReader.h \
  C:\Users\linfe\cs8\File-simulator\includes/FileTree/FileTree.h \
+ C:\Users\linfe\cs8\File-simulator\includes/Fonts/Fonts.h \
  C:\Users\linfe\cs8\File-simulator\includes/InputBox/InputBox.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIComponent.h \
@@ -324,4 +325,7 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/list \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_list.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocated_ptr.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/list.tcc
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/list.tcc \
+ C:\Users\linfe\cs8\File-simulator\includes/TypingBox/typingBox.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h

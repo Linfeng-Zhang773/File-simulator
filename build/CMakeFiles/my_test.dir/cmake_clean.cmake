@@ -45,6 +45,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_test.dir/includes/States/States.cpp.obj.d"
   "CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj"
   "CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj.d"
+  "CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.obj"
+  "CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.obj.d"
   "CMakeFiles/my_test.dir/includes/stub/stub.cpp.obj"
   "CMakeFiles/my_test.dir/includes/stub/stub.cpp.obj.d"
   "bin/my_test.exe"

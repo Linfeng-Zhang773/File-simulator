@@ -27,6 +27,7 @@ set(OLD_GLOB
   "includes/SnapShot/SnapShot.cpp"
   "includes/States/States.cpp"
   "includes/TextInput/TextInput.cpp"
+  "includes/TypingBox/typingBox.cpp"
   "includes/stub/stub.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

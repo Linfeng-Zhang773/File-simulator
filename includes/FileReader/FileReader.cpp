@@ -23,7 +23,7 @@ std::vector<std::string> FileReader::ReadMetaData(std::string filepath)
 }
 void FileReader::WriteMetaData(std::vector<std::string> metaData, std::string filepath)
 {
-    std::ofstream outputFile(filepath, std::ios::trunc);
+    std::fstream outputFile(filepath, std::ios::out);
     if (!outputFile.is_open())
     {
         std::cout << "File Open Failed" << std::endl;
@@ -42,7 +42,8 @@ std::string FileReader::ReadFile(std::string filepath)
     if (!inputFile.is_open())
     {
         std::cout << "File Open Failed" << std::endl;
-        return "error"; // Return an error code
+       return " ";
+        // Return an error code
     }
 
     std::string Eachline;
@@ -59,8 +60,7 @@ std::string FileReader::ReadFile(std::string filepath)
 }
 void FileReader::ModifyFile(std::string changes, std::string filepath)
 {
-    std::ofstream outputFile(filepath, std::ios::trunc);
-
+   std::fstream outputFile(filepath, std::ios::out);
     if (!outputFile.is_open())
     {
         std::cerr << "File Open Failed" << std::endl;
@@ -94,7 +94,7 @@ std::vector<std::string> FileReader::ReadInfoFile(std::string filepath)
 }
 void FileReader::ModifyInfoFile(std::vector<std::string> FileInfo, std::string filepath)
 {
-    std::ofstream outputFile(filepath, std::ios::trunc);
+     std::fstream outputFile(filepath, std::ios::out);
     if (!outputFile.is_open())
     {
         std::cout << "File Open Failed" << std::endl;

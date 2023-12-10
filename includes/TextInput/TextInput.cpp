@@ -1,6 +1,10 @@
 #include "TextInput.h"
 bool TextInput::DrawFileInput = false;
 std::string TextInput::current = "";
+int TextInput::FontSize = 30;
+fontEnum TextInput::ENUM = OPEN_SANS;
+sf::Color TextInput::theColor = sf::Color::Black;
+sf::Vector2f TextInput::thePos = {500, 300};
 TextInput::TextInput(bool isFile, const sf::Vector2f& size, const sf::Vector2f& labelPosition, int count)
 {
     // init box
@@ -42,23 +46,16 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     this->box.addEventHandler(window, event);
 
     // check mouse first, if it's not hover, do nothing
-    if (!MouseEvents<Box>::hovered(box, window))
-    {
-        return;
-    }
 
     // // if not above, check if typing
-    if (this->count > MAX_CHARACTER_LIMIT + this->num) return;
-    if (event.type != sf::Event::TextEntered)
-    {
-        return;
-    }
-    if (event.type == sf::Event::TextEntered && !(sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace)))
+    // if (this->count > MAX_CHARACTER_LIMIT + this->num) return;
+
+    if (MouseEvents<Box>::hovered(box, window) && event.type == sf::Event::TextEntered && !(sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace)))
     {
 
-        SnapShot snap(this->mulText.getString());
-        HistoryNode node(snap, this);
-        History::pushHistory(node);
+        // // SnapShot snap(this->mulText.getString());
+        // // HistoryNode node(snap, this);
+        // History::pushHistory(node);
         char c = static_cast<char>(event.text.unicode);
 
         Letter letter(c);
@@ -96,8 +93,17 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     }
 
     std::string s = mulText.getString();
+
     mulText.clear();
-    std::vector<std::string> v = extractWords(s);
+    std::vector<std::string> v; //= extractWords(s);
+    if (current.length() != 0 && isFileInput)
+    {
+        v = extractWords(current);
+    }
+    else
+    {
+        v = extractWords(s);
+    }
     for (std::string word : v)
     {
 
@@ -122,16 +128,17 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     // std::cout << s << std::endl;
     // std::string current = s;
     //=============================Logic about check commands==========================
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+    if (!isFileInput)
     {
-        std::vector<std::string> v2 = extractStrings(s);
-        // v2[0]=cd or ..., v2[1] = filepath
-        //  for (int i = 0; i < v2.size(); ++i)
-        //  {
-        //      std::cout << v2[i] << std::endl;
-        //  }
-        if (!isFileInput)
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
         {
+            std::vector<std::string> v2 = extractStrings(s);
+            // v2[0]=cd or ..., v2[1] = filepath
+            //  for (int i = 0; i < v2.size(); ++i)
+            //  {
+            //      std::cout << v2[i] << std::endl;
+            //  }
+
             if (v2[0] == "cd")
             {
 
@@ -139,7 +146,7 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
                 //  cd Directory_1/Directory_2/file_7
                 std::string name = extractFileName(v2[1]);
                 // std::cout << "filename is: " << name << std::endl;
-                std::string path = "Files/" + name;
+                std::string path = "../../Files/" + name;
                 // std::cout << "filepath is: " << path << std::endl;
                 // detect file_7(if doesn't exist, new window with error message)
                 //  open file logic
@@ -184,17 +191,26 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     // std::cout << current << std::endl;
     if (isFileInput)
     {
-        this->text.setString(TextInput::current);
+        // mulText.clear();
+        // for (int i = 0; i < current.length(); ++i)
+        // {
+        //     Letter l(current[i]);
+        //     mulText.push(l);
+        // }
+        text.setString(TextInput::current + s);
+        text.setFont(Fonts::getFont(TextInput::ENUM));
+        text.setCharacterSize(TextInput::FontSize);
+        text.setFillColor(TextInput::theColor);
+        text.setPosition(TextInput::thePos);
     }
     else
     {
         this->text.setString(s);
+        text.setFont(Fonts::getFont(OPEN_SANS));
+        text.setCharacterSize(30);
+        text.setFillColor(sf::Color::Black);
+        text.setPosition(this->box.getBox().getPosition());
     }
-
-    text.setFont(Fonts::getFont(OPEN_SANS));
-    text.setCharacterSize(30);
-    text.setFillColor(sf::Color::Black);
-    text.setPosition(this->box.getBox().getPosition());
 }
 void TextInput::update()
 {
@@ -235,14 +251,17 @@ void TextInput::applySnapshot(const SnapShot& snapshot) {}
 void TextInput::OpenLogic(std::string filepath)
 {
     DrawFileInput = true;
-    // FileReader fileReader;
-    std::fstream fileReader;
-    fileReader.open(filepath);
-    if (fileReader.fail())
-    {
-        std::cout << "can not open";
-    }
-    fileReader.close();
+    FileReader fileReader;
+
+    std::string newPath = filepath.substr(0, filepath.length() - 1) + ".txt";
+    TextInput::current = fileReader.ReadFile(newPath);
+    // std::string metaPath = filepath.substr(0, filepath.length() - 1) + "_meta.txt";
+    // std::vector<std::string> metaData = fileReader.ReadMetaData(metaPath);
+    // if(metaData[0]=="Black")
+    // {
+
+    // }
+    // else if()
     // TextInput::current = fileReader.ReadFile(filepath);
     // getFilepath
     // FileReader to read file_7.txt

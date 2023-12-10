@@ -25,7 +25,7 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->createCommand.setFillColor(sf::Color::Blue);
     this->createCommand.setPosition({pos.x, pos.y + 220});
 
-    this->openCommand.setString("How to Open file: cd filepath.txt");
+    this->openCommand.setString("How to Open file: cd filepath");
     this->openCommand.setCharacterSize(24);
     this->openCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->openCommand.setFillColor(sf::Color::Blue);

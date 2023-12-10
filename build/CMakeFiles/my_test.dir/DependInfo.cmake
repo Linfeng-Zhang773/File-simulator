@@ -31,6 +31,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.cpp" "CMakeFiles/my_test.dir/includes/SnapShot/SnapShot.cpp.obj" "gcc" "CMakeFiles/my_test.dir/includes/SnapShot/SnapShot.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/includes/States/States.cpp" "CMakeFiles/my_test.dir/includes/States/States.cpp.obj" "gcc" "CMakeFiles/my_test.dir/includes/States/States.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/includes/TextInput/TextInput.cpp" "CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj" "gcc" "CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj.d"
+  "C:/Users/linfe/cs8/File-simulator/includes/TypingBox/typingBox.cpp" "CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.obj" "gcc" "CMakeFiles/my_test.dir/includes/TypingBox/typingBox.cpp.obj.d"
   "C:/Users/linfe/cs8/File-simulator/includes/stub/stub.cpp" "CMakeFiles/my_test.dir/includes/stub/stub.cpp.obj" "gcc" "CMakeFiles/my_test.dir/includes/stub/stub.cpp.obj.d"
   )
 
