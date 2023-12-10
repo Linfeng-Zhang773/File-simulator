@@ -2,6 +2,7 @@
 
 std::vector<std::string> FileReader::ReadMetaData(std::string filepath)
 {
+
     std::ifstream inputFile(filepath);
     if (!inputFile.is_open())
     {
@@ -41,7 +42,7 @@ std::string FileReader::ReadFile(std::string filepath)
     if (!inputFile.is_open())
     {
         std::cout << "File Open Failed" << std::endl;
-        exit(1); // Return an error code
+        return "error"; // Return an error code
     }
 
     std::string Eachline;
@@ -83,7 +84,7 @@ std::vector<std::string> FileReader::ReadInfoFile(std::string filepath)
     std::string Eachline;
     while (std::getline(inputFile, Eachline))
     {
-        std::cout << Eachline << std::endl;
+        // std::cout << Eachline << std::endl;
         v.push_back(Eachline);
     }
 

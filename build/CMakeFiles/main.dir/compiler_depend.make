@@ -4927,6 +4927,7 @@ CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: C:/Users/linfe/cs8/Fil
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
   C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
   C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
   C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
@@ -5004,6 +5005,7 @@ CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: C:/Users/linfe/cs8/Fil
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_defines.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_ptr.h \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/fstream.tcc \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functexcept.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functional_hash.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/hash_bytes.h \
@@ -5078,9 +5080,12 @@ CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj: C:/Users/linfe/cs8/Fil
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/numeric_traits.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/string_conversions.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/type_traits.h \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/fstream \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/atomic_word.h \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/basic_file.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++allocator.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++config.h \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++io.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++locale.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/cpu_defines.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/ctype_base.h \
@@ -5348,6 +5353,7 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/linfe/cs8/File-simulator/main.cpp \
   C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileItem/FileItem.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.h \
   C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
   C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
@@ -5556,6 +5562,7 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/linfe/cs8/File-simulator/main.cpp \
   C:/Users/linfe/cs8/File-simulator/includes/Background/Background.h \
   C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.h \
   C:/Users/linfe/cs8/File-simulator/includes/CommandHintButton/CommandHintButton.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.h \
   C:/Users/linfe/cs8/File-simulator/includes/InputBox/InputBox.h \
   C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.h \

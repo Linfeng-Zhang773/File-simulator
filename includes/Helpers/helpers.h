@@ -53,7 +53,7 @@ inline std::vector<std::string> extractStrings(const std::string& str)
     std::string concat = "";
     for (const auto& s : str)
     {
-        if (s == ' ') 
+        if (s == ' ')
         {
             res.push_back(concat);
             concat = "";
@@ -61,13 +61,41 @@ inline std::vector<std::string> extractStrings(const std::string& str)
         }
         concat += s;
     }
-    std::string withoutBar = "";
-    for(int i = 0; i < concat.length(); ++i)
-    {
-        if(i == concat.length() - 2) continue;
-        withoutBar += concat[i];
-    }
-    res.push_back(withoutBar);
+    // std::string withoutBar = "";
+    // for(int i = 0; i < concat.length(); ++i)
+    // {
+    //     if(i == concat.length() - 2) continue;
+    //     withoutBar += concat[i];
+    // }
+    res.push_back(concat);
     return res;
+}
+
+inline std::string reverse(const std::string& str)
+{
+    std::string newStr;
+    for (int i = str.length() - 1; i >= 0; --i)
+    {
+
+        newStr += str[i];
+    }
+    return newStr;
+}
+inline std::string extractFileName(const std::string& str)
+{
+    std::string newStr;
+    for (int i = str.length() - 1; i >= 0; --i)
+    {
+        if (str[i] != '/')
+        {
+            newStr += str[i];
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    return reverse(newStr);
 }
 #endif

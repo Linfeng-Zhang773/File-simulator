@@ -249,9 +249,14 @@ CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
  C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/fstream \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/basic_file.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++io.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/fstream.tcc \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iostream \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
  C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iostream \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/sstream \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/sstream.tcc \
  C:/Users/linfe/cs8/File-simulator/includes/History/History.h \

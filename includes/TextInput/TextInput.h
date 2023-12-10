@@ -1,6 +1,7 @@
 #ifndef TEXTINPUT_H
 #define TEXTINPUT_H
 #include "../Box/Box.h"
+#include "../FileReader/FileReader.h"
 #include "../GUIcomponent/GUIcomponent.h"
 #include "../Helpers/helpers.h"
 #include "../History/History.h"
@@ -9,11 +10,15 @@
 #include "../Mouse/MouseEvents.h"
 #include "../MultiText/MultiText.h"
 #include <SFML/Graphics.hpp>
+#include <fstream>
+#include <iostream>
+#include <string>
 
 class TextInput : public GUIComponent
 {
 private:
     Box box;
+    sf::Text text;
     sf::Text label;
     MultiText mulText;
     static const int MAX_CHARACTER_LIMIT = 720;
@@ -22,10 +27,13 @@ private:
     sf::RectangleShape cursor;
     bool cursorVisible;
     sf::Clock cursorBlinkTimer;
+    static bool DrawFileInput;
+    bool isFileInput;
+    static std::string current;
 
 public:
     TextInput() = default;
-    TextInput(const sf::Vector2f& size, const sf::Vector2f& labelPosition, int count);
+    TextInput(bool isFile, const sf::Vector2f& size, const sf::Vector2f& labelPosition, int count);
     ~TextInput() = default;
 
     // from the sf::Drawable class
@@ -44,6 +52,8 @@ public:
     void setLabelMargin(std::vector<float> margin);
     void setLabelPosition(const sf::Vector2f& pos);
     void setCount(int cos);
+
+    void OpenLogic(std::string filepath);
 };
 
 #endif

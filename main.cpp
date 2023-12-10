@@ -3,6 +3,7 @@
 #include "includes/Background/Background.h"
 #include "includes/BuildFileTree/BuildFileTree.h"
 #include "includes/CommandHintButton/CommandHintButton.h"
+#include "includes/FileReader/FileReader.h"
 #include "includes/FileTree/FileTree.h"
 #include "includes/InputBox/InputBox.h"
 #include "includes/Menu/Menu.h"
@@ -20,8 +21,9 @@ int main()
     //  }
     Application app;
     Background wallpaper({0, 0});
-    TextInput commandLine({800, 100}, {430, 850}, 670);
-    TextInput FileInput({700, 500}, {500, 200}, 630);
+    TextInput commandLine(false, {800, 100}, {430, 850}, 670);
+    TextInput FileInput(true, {700, 500}, {500, 300}, 630);
+
     Menu color;
     Menu size;
     Menu Font;
@@ -37,16 +39,16 @@ int main()
     color.addItem("White");
     color.addItem("Green");
 
-    color.setBoxPosition({400, 160}, "Color");
+    color.setBoxPosition({400, 0}, "Color");
     color.setProperPosition();
 
-    size.addItem("10");
-    size.addItem("12");
-    size.addItem("14");
-    size.addItem("16");
-    size.addItem("18");
     size.addItem("20");
-    size.setBoxPosition({600, 160}, "Font Size");
+    size.addItem("25");
+    size.addItem("30");
+    size.addItem("35");
+    size.addItem("40");
+    size.addItem("45");
+    size.setBoxPosition({600, 0}, "Font Size");
     size.setProperPosition();
 
     Font.addItem("arial");
@@ -54,13 +56,13 @@ int main()
     Font.addItem("comfortaa");
     Font.addItem("Lexend");
     Font.addItem("Verdana");
-    Font.setBoxPosition({800, 160}, "Fonts");
+    Font.setBoxPosition({800, 0}, "Fonts");
     Font.setProperPosition();
 
     position.addItem("left");
     position.addItem("Middle");
     position.addItem("Right");
-    position.setBoxPosition({1000, 160}, "Position");
+    position.setBoxPosition({1000,0}, "Position");
     position.setProperPosition();
 
     MenuBar fileMenu;
@@ -72,7 +74,7 @@ int main()
     app.addComponent(wallpaper);
     app.addComponent(button);
     app.addComponent(commandLine);
-    app.addComponent(FileInput);
+
     app.addComponent(fileMenu);
     // FileTree fileTree;
     // fileTree.push(" ", "Directory 1", true);
@@ -97,7 +99,11 @@ int main()
     // FileNode node2(item2);
     BuildFileTree build("../../Files/Pathinfo.txt");
     app.addComponent(build.getFileTree());
+    app.addComponent(FileInput);
     // app.addComponent(node2);
-
+    // FileReader fileReader;
+    // std::string s = fileReader.ReadFile("../../Files/file_1.txt");
+    // ../../Files/file_1.txt
+    // std::cout << s << std::endl;
     app.run();
 }

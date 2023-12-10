@@ -486,8 +486,8 @@ bin/my_test.exe: CMakeFiles/my_test.dir/build.make
 bin/my_test.exe: lib/libsfml-graphics-d.a
 bin/my_test.exe: lib/libsfml-window-d.a
 bin/my_test.exe: lib/libsfml-system-d.a
-bin/my_test.exe: lib/libgtest_main.dll.a
-bin/my_test.exe: lib/libgtest.dll.a
+bin/my_test.exe: lib/libgtest_main.a
+bin/my_test.exe: lib/libgtest.a
 bin/my_test.exe: CMakeFiles/my_test.dir/linkLibs.rsp
 bin/my_test.exe: CMakeFiles/my_test.dir/objects1.rsp
 bin/my_test.exe: CMakeFiles/my_test.dir/link.txt

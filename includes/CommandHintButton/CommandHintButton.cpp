@@ -19,13 +19,13 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->show.setFillColor(sf::Color::Black);
     this->show.setPosition({pos.x + 5, pos.y + 5});
 
-    this->createCommand.setString("How to create file: createUnder folder");
+    this->createCommand.setString("How to create file: create filename Under folder ");
     this->createCommand.setCharacterSize(24);
     this->createCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->createCommand.setFillColor(sf::Color::Blue);
     this->createCommand.setPosition({pos.x, pos.y + 220});
 
-    this->openCommand.setString("How to Open file: cd filepath");
+    this->openCommand.setString("How to Open file: cd filepath.txt");
     this->openCommand.setCharacterSize(24);
     this->openCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->openCommand.setFillColor(sf::Color::Blue);
@@ -37,13 +37,13 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->deleteCommand.setFillColor(sf::Color::Blue);
     this->deleteCommand.setPosition({pos.x, pos.y + 70});
 
-    this->renameCommand.setString("How to Rename file: rename filepath");
+    this->renameCommand.setString("How to Rename file: rename filepath to 'name'");
     this->renameCommand.setCharacterSize(24);
     this->renameCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->renameCommand.setFillColor(sf::Color::Blue);
     this->renameCommand.setPosition({pos.x, pos.y + 100});
 
-    this->moveCommand.setString("How to move file: move filename to filepath");
+    this->moveCommand.setString("How to move file: move filename to folder");
     this->moveCommand.setCharacterSize(24);
     this->moveCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->moveCommand.setFillColor(sf::Color::Blue);
@@ -55,7 +55,7 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->searchCommand.setFillColor(sf::Color::Blue);
     this->searchCommand.setPosition({pos.x, pos.y + 160});
 
-    this->saveCommand.setString("How to save file: save filename to filepath");
+    this->saveCommand.setString("How to save file: save filename");
     this->saveCommand.setCharacterSize(24);
     this->saveCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->saveCommand.setFillColor(sf::Color::Blue);

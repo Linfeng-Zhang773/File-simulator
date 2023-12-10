@@ -1,8 +1,10 @@
 #include "TextInput.h"
-
-TextInput::TextInput(const sf::Vector2f& size, const sf::Vector2f& labelPosition, int count)
+bool TextInput::DrawFileInput = false;
+std::string TextInput::current = "";
+TextInput::TextInput(bool isFile, const sf::Vector2f& size, const sf::Vector2f& labelPosition, int count)
 {
     // init box
+    this->isFileInput = isFile;
     this->box = Box(size);
     this->box.setPosistion(labelPosition);
     this->label.setFont(Fonts::getFont(OPEN_SANS));
@@ -22,9 +24,13 @@ void TextInput::setBoxPosistion(const sf::Vector2f& pos)
 // from the sf::Drawable class
 void TextInput::draw(sf::RenderTarget& window, sf::RenderStates states) const
 {
-    this->box.draw(window, states);
-    mulText.draw(window, states);
-    window.draw(label);
+    if (!isFileInput || (isFileInput && DrawFileInput))
+    {
+        this->box.draw(window, states);
+        // mulText.draw(window, states);
+        window.draw(this->text);
+        window.draw(label);
+    }
 }
 
 // from EventHandler
@@ -65,24 +71,21 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Backspace))
     {
-        if (mulText.size() > 1)
+        if (mulText.size() > 0)
         {
             SnapShot snap(this->mulText.getString());
             HistoryNode node(snap, this);
             History::pushHistory(node);
             mulText.pop();
-            mulText.pop();
+            // mulText.pop();
             this->count -= CHARACTER_SIZE;
         }
     }
     if (KeyBoardShortCuts::isUndo())
     {
-        // std::cout << "GO in" << std::endl;
-        // std::cout << History::size() << std::endl;
         if (History::size() != 0)
         {
             std::string s = History::topHistory().snapshot.data;
-            std::cout << s << std::endl;
             History::popHistory();
             mulText.clear();
             for (char c : s)
@@ -105,19 +108,19 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
         this->count += CHARACTER_SIZE;
         mulText.push(l);
     }
-    if (mulText.barExist())
-    {
-        this->mulText.removeBar();
-    }
-    Letter l('|');
-    // set position
-    l.setFillColor(sf::Color::Red);
+    // if (mulText.barExist())
+    // {
+    //     this->mulText.removeBar();
+    // }
+    // Letter l('|');
+    // // set position
+    // l.setFillColor(sf::Color::Red);
 
-    l.setPosition(count / 1.5, this->box.getBox().getPosition().y);
-    this->count += CHARACTER_SIZE;
-    mulText.push(l);
+    // l.setPosition(count / 1.5, this->box.getBox().getPosition().y);
+    // this->count += CHARACTER_SIZE;
+    // mulText.push(l);
     // std::cout << s << std::endl;
-
+    // std::string current = s;
     //=============================Logic about check commands==========================
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
@@ -127,36 +130,71 @@ void TextInput::addEventHandler(sf::RenderWindow& window, sf::Event event)
         //  {
         //      std::cout << v2[i] << std::endl;
         //  }
-        if (v2[0] == "cd")
+        if (!isFileInput)
         {
-            // open file logic
-            // v2[1] is the filepath do logic
-        }
-        else if (v2[0] == "createUnder")
-        {
-            // create new file logic
-        }
-        else if (v2[0] == "delete")
-        {
-            // delete file logic
-        }
-        else if (v2[0] == "rename")
-        {
-            // rename file logic
-        }
-        else if (v2[0] == "move")
-        {
-            // move file logic
-        }
-        else if (v2[0] == "search")
-        {
-            // search filename logic
-        }
-        else
-        {
-            // save file modification logic
+            if (v2[0] == "cd")
+            {
+
+                // v2[1] is Directory_1/Directory_2/file_7
+                //  cd Directory_1/Directory_2/file_7
+                std::string name = extractFileName(v2[1]);
+                // std::cout << "filename is: " << name << std::endl;
+                std::string path = "Files/" + name;
+                // std::cout << "filepath is: " << path << std::endl;
+                // detect file_7(if doesn't exist, new window with error message)
+                //  open file logic
+                //  s = file_7 + ".txt"
+                // passing s as filepath into std::string ReadFile(std::string filepath);
+                // label.setString(file_7)
+                // then read file7_metadata.txt(get all the metadata)
+                // set to text.set(...)
+                //  v2[1] is the filepath do logic
+                OpenLogic(path);
+            }
+            else if (v2[0] == "createUnder")
+            {
+                // create new file logic
+            }
+            else if (v2[0] == "delete")
+            {
+                // delete file logic
+            }
+            else if (v2[0] == "rename")
+            {
+                // rename file logic
+            }
+            else if (v2[0] == "move")
+            {
+                // move file logic
+            }
+            else if (v2[0] == "search")
+            {
+                // search filename logic
+            }
+            else if (v2[0] == "save")
+            {
+                // save file modification logic
+            }
+            else
+            {
+                // command not match any, new window with error message
+            }
         }
     }
+    // std::cout << current << std::endl;
+    if (isFileInput)
+    {
+        this->text.setString(TextInput::current);
+    }
+    else
+    {
+        this->text.setString(s);
+    }
+
+    text.setFont(Fonts::getFont(OPEN_SANS));
+    text.setCharacterSize(30);
+    text.setFillColor(sf::Color::Black);
+    text.setPosition(this->box.getBox().getPosition());
 }
 void TextInput::update()
 {
@@ -193,3 +231,22 @@ SnapShot& TextInput::getSnapshot()
 {
 }
 void TextInput::applySnapshot(const SnapShot& snapshot) {}
+
+void TextInput::OpenLogic(std::string filepath)
+{
+    DrawFileInput = true;
+    // FileReader fileReader;
+    std::fstream fileReader;
+    fileReader.open(filepath);
+    if (fileReader.fail())
+    {
+        std::cout << "can not open";
+    }
+    fileReader.close();
+    // TextInput::current = fileReader.ReadFile(filepath);
+    // getFilepath
+    // FileReader to read file_7.txt
+    // text.setString()
+    // TextInput FileInput(true, true, {700, 500}, {500, 200}, 630);
+    //   app.addComponent(FileInput);
+}
