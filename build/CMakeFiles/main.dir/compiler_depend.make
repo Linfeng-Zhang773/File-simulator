@@ -4928,15 +4928,24 @@ CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: C:/Users/linfe/cs8/Fil
   _deps/sfml-src/include/SFML/Window/Window.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  C:/Users/linfe/cs8/File-simulator/includes/Application/Application.h \
+  C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileItem/FileItem.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.h \
   C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
   C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
   C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
   C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
+  C:/Users/linfe/cs8/File-simulator/includes/Item/Item.h \
+  C:/Users/linfe/cs8/File-simulator/includes/Mouse/MouseEvents.h \
   C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
   C:/Users/linfe/cs8/File-simulator/includes/SnapShotInterface/SnapShotInterface.h \
   C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
   C:/Users/linfe/cs8/File-simulator/includes/States/statesEnum.h \
+  C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
   C:/mingw32/i686-w64-mingw32/include/_mingw.h \
   C:/mingw32/i686-w64-mingw32/include/_mingw_mac.h \
   C:/mingw32/i686-w64-mingw32/include/_mingw_off_t.h \
@@ -5034,8 +5043,10 @@ CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: C:/Users/linfe/cs8/Fil
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator_base_types.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_map.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multimap.h \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multiset.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_pair.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_set.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_tempbuf.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_tree.h \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_uninitialized.h \
@@ -5094,6 +5105,7 @@ CMakeFiles/main.dir/includes/TypingBox/typingBox.cpp.obj: C:/Users/linfe/cs8/Fil
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/map \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/new \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ostream \
+  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/set \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/sstream \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stdexcept \
   C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stdlib.h \
@@ -5335,7 +5347,9 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/linfe/cs8/File-simulator/main.cpp \
   _deps/sfml-src/include/SFML/Window/Window.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
   _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  C:/Users/linfe/cs8/File-simulator/includes/Application/Application.h \
   C:/Users/linfe/cs8/File-simulator/includes/Box/Box.h \
+  C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileItem/FileItem.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \

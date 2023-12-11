@@ -20,11 +20,13 @@ class BuildFileTree
     // fileTree.push("Directory 3", "file 6", false);
     // fileTree.push("Directory 3", "file 7", false);
 private:
-    FileTree Filetree;
+    static FileTree Filetree;
 
 public:
-    BuildFileTree(std::string filepath);
-    FileTree& getFileTree();
+    BuildFileTree() = default;
+    static void setUp(std::string filepath);
+    static FileTree& getFileTree();
+    static void rebuild();
 };
 
 #endif

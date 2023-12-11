@@ -13,6 +13,11 @@ private:
 public:
     static void addComponent(GUIComponent& component);
     static void run();
+    inline static void removeFileTreeAndReAdd(GUIComponent& tree)
+    {
+        Application::components.pop_back();
+        Application::components.push_back(&tree);
+    }
 };
 
 #endif // SFML_PROJECT_APPLICATION_H

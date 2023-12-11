@@ -233,17 +233,18 @@ void TypingBox::update()
     if (this->selected() && sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) && !this->isFileInput)
     {
         std::vector<std::string> v2 = extractStrings(inputText.getString());
+
         // read the file, store the stuff in content
         // TypingBox::content = "works";
         // type in cd dddd/file_1 and press enter then you do file operation(load the content, and then)
         if (v2[0] == "cd")
         {
-
-            // v2[1] is Directory_1/Directory_2/file_7
-            //  cd Directory_1/Directory_2/file_7
             std::string name = extractFileName(v2[1]);
             // std::cout << "filename is: " << name << std::endl;
             std::string path = "../../Files/" + name;
+            // v2[1] is Directory_1/Directory_2/file_7
+            //  cd Directory_1/Directory_2/file_7
+
             // std::cout << "filepath is: " << path << std::endl;
             // detect file_7(if doesn't exist, new window with error message)
             //  open file logic
@@ -255,6 +256,23 @@ void TypingBox::update()
             //  v2[1] is the filepath do logic
             OpenLogic(path);
         }
+        if (v2[0] == "delete")
+        {
+            std::string name = extractFileName(v2[1]);
+            // std::cout << "filename is: " << name << std::endl;
+            std::string path = "../../Files/" + name;
+            DeleteLogic(path, name);
+        }
+        if (v2[0] == "rename")
+        {
+            // rename filepath to name
+            std::string filename = extractFileName(v2[1]);
+            // std::cout << "filename is: " << name << std::endl;
+            std::string path = "../../Files/" + filename;
+            std::string newName = v2[3];
+            RenameLogic(path, filename, newName);
+        }
+        this->setTextWithNoLimit("");
     }
     if (TypingBox::content.length() != 0 && this->isFileInput)
     {
@@ -264,8 +282,6 @@ void TypingBox::update()
         this->setCharacter(font_Size);
         TypingBox::content = "";
         this->setFont(Fonts::getFont(TypingBox::ENUM));
-
-       
     }
 }
 
@@ -320,6 +336,74 @@ void TypingBox::OpenLogic(std::string filepath)
     {
         TypingBox::ENUM = TIMES;
     }
+}
 
-   
+void TypingBox::DeleteLogic(std::string filepath, std::string filename)
+{
+    FileReader FileReader2;
+    std::string newPath = filepath.substr(0, filepath.length() - 1) + ".txt";
+    std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
+
+    std::string metaPath = filepath.substr(0, filepath.length() - 1) + "_meta.txt";
+    for (int i = 0; i < V.size(); ++i)
+    {
+
+        if (V[i].find(filename.substr(0, filename.length() - 1)) != std::string::npos)
+        {
+            V.erase(V.begin() + i);
+        }
+    }
+    remove(newPath.c_str());
+    remove(metaPath.c_str());
+    FileReader2.ModifyInfoFile(V, "../../Files/Pathinfo.txt");
+    BuildFileTree::setUp("../../Files/Pathinfo.txt");
+    Application::removeFileTreeAndReAdd(BuildFileTree::getFileTree());
+}
+
+void TypingBox::RenameLogic(std::string filepath, std::string originalName, std::string newFileName)
+{
+    // get current parent first
+    std::string newPath = filepath.substr(0, filepath.length()) + ".txt";
+    std::string metaPath = filepath.substr(0, filepath.length()) + "_meta.txt";
+
+    FileReader FileReader2;
+    std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
+    std::string parent = "";
+    int idx = 0;
+    for (int i = 0; i < V.size(); ++i)
+    {
+        if (V[i].find(originalName.substr(0, originalName.length())) != std::string::npos)
+        {
+            V.erase(V.begin() + i);
+            parent = V[i].substr(0, 11);
+            idx = i;
+            break;
+        }
+    }
+
+    remove(newPath.c_str());
+    remove(metaPath.c_str());
+    std::string newPath2 = "../../Files/" + newFileName.substr(0, newFileName.length() - 1) + ".txt";
+    std::string metaPath2 = "../../Files/" + newFileName.substr(0, newFileName.length() - 1) + "_meta.txt";
+    std::ofstream outputFile(newPath2);
+    if (outputFile.is_open())
+        outputFile.close();
+    else
+        std::cout << "error open:" << newPath2 << "\n";
+
+    outputFile.open(metaPath2);
+    if (outputFile.is_open())
+    {
+        outputFile << "Black\n30\nComfortaa";
+        outputFile.close();
+    }
+    else
+    {
+        std::cout << "error open:" << metaPath2 << "\n";
+    }
+
+    V.insert(V.begin() + idx, parent + " " + newFileName.substr(0, newFileName.length() - 1) + " " + "false");
+    FileReader2.ModifyInfoFile(V, "../../Files/Pathinfo.txt");
+    BuildFileTree::setUp("../../Files/Pathinfo.txt");
+    Application::removeFileTreeAndReAdd(BuildFileTree::getFileTree());
 }

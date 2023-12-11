@@ -75,7 +75,6 @@ FileNode* FileTree::findParent(FileNode* root, const std::string& parent, const 
     return nullptr;
 }
 
-FileTree::~FileTree() {}
 void FileTree::push(std::string parent, std::string item, bool folderOrFile)
 {
 

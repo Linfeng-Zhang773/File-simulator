@@ -13,7 +13,6 @@ std::vector<std::string> FileReader::ReadMetaData(std::string filepath)
     std::string Eachline;
     while (std::getline(inputFile, Eachline))
     {
-        std::cout << Eachline << std::endl;
         v.push_back(Eachline);
     }
 
@@ -50,7 +49,6 @@ std::string FileReader::ReadFile(std::string filepath)
     std::string content;
     while (std::getline(inputFile, Eachline))
     {
-        std::cout << Eachline << std::endl;
         content += Eachline;
     }
 

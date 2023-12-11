@@ -1,11 +1,14 @@
 #ifndef TYPINGBOX_H
 #define TYPINGBOX_H
 // Text Input commponent
+#include "../Application/Application.h"
+#include "../BuildFileTree/BuildFileTree.h"
 #include "../FileReader/FileReader.h"
 #include "../Fonts/Fonts.h"
 #include "../GUIcomponent/GUIcomponent.h"
 #include "../Helpers/helpers.h"
 #include <SFML/Graphics.hpp>
+#include <cstdio>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -77,6 +80,10 @@ public:
     void applySnapshot(const SnapShot& snapshot) override {}
 
     void OpenLogic(std::string filepath);
+
+    void DeleteLogic(std::string filepath, std::string filename);
+
+    void RenameLogic(std::string filepath, std::string originalName, std::string newFileName);
 };
 
 #endif

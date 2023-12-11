@@ -302,6 +302,8 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.h \
  C:\Users\linfe\cs8\File-simulator\includes/TextInput/TextInput.h \
  C:\Users\linfe\cs8\File-simulator\includes/TypingBox/typingBox.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Application/Application.h \
+ C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.h \
  C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \

@@ -21,7 +21,6 @@ int main()
     //  {
     //      std::cout << v[i] << std::endl;
     //  }
-    Application app;
     Background wallpaper({0, 0});
     // TextInput commandLine(false, {800, 100}, {430, 850}, 670);
     // TextInput FileInput(true, {700, 500}, {500, 300}, 630);
@@ -70,13 +69,13 @@ int main()
     fileMenu.addMenu(size);
     fileMenu.addMenu(Font);
 
-    app.addComponent(wallpaper);
-    app.addComponent(button);
+    Application::addComponent(wallpaper);
+    Application::addComponent(button);
     // app.addComponent(commandLine);
 
-    app.addComponent(fileMenu);
-    app.addComponent(commandLine);
-    app.addComponent(fileInput);
+    Application::addComponent(fileMenu);
+    Application::addComponent(commandLine);
+    Application::addComponent(fileInput);
     // FileTree fileTree;
     // fileTree.push(" ", "Directory 1", true);
     // fileTree.push("Directory 1", "file 1", false);
@@ -98,8 +97,8 @@ int main()
     // FileItem item2 = {"assets/folder.png", "2222", {130, 50}, {100, 100}};
     // item2.setPos({100, 100});
     // FileNode node2(item2);
-    BuildFileTree build("../../Files/Pathinfo.txt");
-    app.addComponent(build.getFileTree());
+    BuildFileTree::setUp("../../Files/Pathinfo.txt");
+    Application::addComponent(BuildFileTree::getFileTree());
 
     // app.addComponent(FileInput);
     // app.addComponent(node2);
@@ -107,5 +106,5 @@ int main()
     // std::string s = fileReader.ReadFile("../../Files/file_1.txt");
     // ../../Files/file_1.txt
     // std::cout << s << std::endl;
-    app.run();
+    Application::run();
 }

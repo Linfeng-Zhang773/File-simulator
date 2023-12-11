@@ -37,7 +37,7 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->deleteCommand.setFillColor(sf::Color::Green);
     this->deleteCommand.setPosition({pos.x, pos.y + 70});
 
-    this->renameCommand.setString("How to Rename file: rename filepath to 'name'");
+    this->renameCommand.setString("How to Rename file: rename filepath to name");
     this->renameCommand.setCharacterSize(24);
     this->renameCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->renameCommand.setFillColor(sf::Color::Green);
