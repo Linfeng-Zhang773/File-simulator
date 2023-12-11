@@ -6,6 +6,7 @@
 #include "includes/FileReader/FileReader.h"
 #include "includes/FileTree/FileTree.h"
 #include "includes/Fonts/Fonts.h"
+#include "includes/Helpers/helpers.h"
 #include "includes/InputBox/InputBox.h"
 #include "includes/Menu/Menu.h"
 #include "includes/MenuBar/MenuBar.h"
@@ -14,6 +15,23 @@
 #include <SFML/Graphics.hpp>
 int main()
 {
+    // std::vector<std::string> lines = {
+    //     "empty Directory_1 true",
+    //     "Directory_1 file_1 false",
+    //     "Directory_1 file_2 false",
+    //     "Directory_1 Directory_2 true",
+    //     "Directory_2 file_99 false",
+    //     "Directory_2 file_4 false",
+    //     "Directory_2 file_5 false",
+    //     "Directory_2 Directory_3 true",
+    //     "Directory_1 file_6 false",
+    //     "Directory_3 file_7 false"};
+    // std::vector<std::string> sortedLines = SortFileInfo(lines);
+    // for (const auto& line : sortedLines)
+    // {
+    //     std::cout << line << std::endl;
+    // }
+
     // test for string split
     //   std::string s = "cd filename filepat|h";
     //  std::vector<std::string> v = extractStrings(s);

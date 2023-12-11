@@ -1,5 +1,10 @@
 #include "typingBox.h"
 std::string TypingBox::content = "";
+std::string TypingBox::filePathToSave = "";
+std::string TypingBox::fileMetaPathToSave = "";
+std::string TypingBox::fileContentToSave = "";
+bool TypingBox::isFileOpen = false;
+
 sf::Color TypingBox::color = sf::Color::Black;
 int TypingBox::font_Size = 30;
 fontEnum TypingBox::ENUM = OPEN_SANS;
@@ -214,7 +219,7 @@ void TypingBox::clear()
 // from the sf::Drawable class
 void TypingBox::draw(sf::RenderTarget& window, sf::RenderStates states) const
 {
-
+    if (this->isFileInput && !TypingBox::isFileOpen) return;
     window.draw(rectangle);
     window.draw(inputText);
     window.draw(label);
@@ -254,6 +259,9 @@ void TypingBox::update()
             // then read file7_metadata.txt(get all the metadata)
             // set to text.set(...)
             //  v2[1] is the filepath do logic
+            TypingBox::isFileOpen = true;
+            TypingBox::filePathToSave = path.substr(0, path.length() - 1) + ".txt";
+            TypingBox::fileMetaPathToSave = path.substr(0, path.length() - 1) + "_meta.txt";
             OpenLogic(path);
         }
         if (v2[0] == "delete")
@@ -272,6 +280,17 @@ void TypingBox::update()
             std::string newName = v2[3];
             RenameLogic(path, filename, newName);
         }
+        if (v2[0] == "move")
+        {
+            // move filename to folder
+            std::string filename = (v2[1]);
+            std::string parentName = (v2[3]);
+            MoveLogic(parentName, filename);
+        }
+        if (v2[0] == "save")
+        {
+            SaveLogic();
+        }
         this->setTextWithNoLimit("");
     }
     if (TypingBox::content.length() != 0 && this->isFileInput)
@@ -283,6 +302,7 @@ void TypingBox::update()
         TypingBox::content = "";
         this->setFont(Fonts::getFont(TypingBox::ENUM));
     }
+    if (this->isFileInput) TypingBox::fileContentToSave = this->getText();
 }
 
 void TypingBox::OpenLogic(std::string filepath)
@@ -385,25 +405,63 @@ void TypingBox::RenameLogic(std::string filepath, std::string originalName, std:
     remove(metaPath.c_str());
     std::string newPath2 = "../../Files/" + newFileName.substr(0, newFileName.length() - 1) + ".txt";
     std::string metaPath2 = "../../Files/" + newFileName.substr(0, newFileName.length() - 1) + "_meta.txt";
-    std::ofstream outputFile(newPath2);
-    if (outputFile.is_open())
-        outputFile.close();
-    else
-        std::cout << "error open:" << newPath2 << "\n";
+    // std::ofstream outputFile(newPath2);
+    // if (outputFile.is_open())
+    //     outputFile.close();
+    // else
+    //     std::cout << "error open:" << newPath2 << "\n";
 
-    outputFile.open(metaPath2);
-    if (outputFile.is_open())
-    {
-        outputFile << "Black\n30\nComfortaa";
-        outputFile.close();
-    }
-    else
-    {
-        std::cout << "error open:" << metaPath2 << "\n";
-    }
+    // outputFile.open(metaPath2);
+    // if (outputFile.is_open())
+    // {
+    //     outputFile << "Black\n30\nComfortaa";
+    //     outputFile.close();
+    // }
+    // else
+    // {
+    //     std::cout << "error open:" << metaPath2 << "\n";
+    // }
+    std::vector<std::string> METADATA = {"Black", "30", "Comfortaa"};
+    FileReader2.createNewFile(newPath2);
+    FileReader2.WriteMetaData(METADATA, metaPath2);
 
     V.insert(V.begin() + idx, parent + " " + newFileName.substr(0, newFileName.length() - 1) + " " + "false");
     FileReader2.ModifyInfoFile(V, "../../Files/Pathinfo.txt");
     BuildFileTree::setUp("../../Files/Pathinfo.txt");
     Application::removeFileTreeAndReAdd(BuildFileTree::getFileTree());
+}
+
+void TypingBox::MoveLogic(std::string parent, std::string filename)
+{
+    // for example: parent is Directory_1, filename is file_7
+    FileReader FileReader2;
+    int idx = 0;
+    std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
+    for (int i = 0; i < V.size(); ++i)
+    {
+        if (V[i].find(filename) != std::string::npos)
+        {
+            // std::cout << "FOUND!" << std::endl;
+            V.erase(V.begin() + i);
+            idx = i;
+            break;
+        }
+    }
+    V.insert(V.begin() + idx, parent.substr(0, parent.length() - 1) + " " + filename + " " + "false");
+    std::vector<std::string> sortedV = SortFileInfo(V);
+    FileReader2.ModifyInfoFile(sortedV, "../../Files/Pathinfo.txt");
+    BuildFileTree::setUp("../../Files/Pathinfo.txt");
+    Application::removeFileTreeAndReAdd(BuildFileTree::getFileTree());
+}
+
+void TypingBox::SaveLogic()
+{
+    std::string toSaveContent = TypingBox::fileContentToSave;
+    FileReader reader;
+    reader.ModifyFile(toSaveContent, TypingBox::filePathToSave);
+    // std::vector<std::string> v;
+    // reader.WriteMetaData(v, TypingBox::fileMetaPathToSave);
+    TypingBox::filePathToSave = "";
+    TypingBox::fileMetaPathToSave = "";
+    TypingBox::isFileOpen = false;
 }

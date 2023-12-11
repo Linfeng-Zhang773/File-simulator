@@ -21,6 +21,11 @@ class TypingBox : public GUIComponent
 {
 private:
     static std::string content;
+    static std::string fileContentToSave;
+    static std::string filePathToSave;
+    static std::string fileMetaPathToSave;
+    static bool isFileOpen;
+
     bool isFileInput;
     sf::Text inputText;
     std::string text;
@@ -84,6 +89,10 @@ public:
     void DeleteLogic(std::string filepath, std::string filename);
 
     void RenameLogic(std::string filepath, std::string originalName, std::string newFileName);
+
+    void MoveLogic(std::string parent, std::string filename);
+
+    void SaveLogic();
 };
 
 #endif

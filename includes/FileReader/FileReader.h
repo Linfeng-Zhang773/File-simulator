@@ -17,6 +17,7 @@ public:
     std::vector<std::string> ReadMetaData(std::string filepath);
     void WriteMetaData(std::vector<std::string> metaData, std::string filepath);
     std::string ReadFile(std::string filepath);
+    void createNewFile(std::string filepath);
     void ModifyFile(std::string changes, std::string filepath);
     //for reading the info about files to build a tree
     std::vector<std::string> ReadInfoFile(std::string filepath);

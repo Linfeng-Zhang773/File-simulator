@@ -5549,6 +5549,7 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/linfe/cs8/File-simulator/main.cpp \
   C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
   C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.h \
   C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+  C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
   C:/Users/linfe/cs8/File-simulator/includes/InputBox/InputBox.h \
   C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.h \
   C:/Users/linfe/cs8/File-simulator/includes/MenuBar/MenuBar.h \

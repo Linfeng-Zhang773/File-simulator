@@ -286,6 +286,7 @@ CMakeFiles/main.dir/main.cpp.obj: \
  C:\Users\linfe\cs8\File-simulator\includes/FileReader/FileReader.h \
  C:\Users\linfe\cs8\File-simulator\includes/FileTree/FileTree.h \
  C:\Users\linfe\cs8\File-simulator\includes/Fonts/Fonts.h \
+ C:\Users\linfe\cs8\File-simulator\includes/Helpers/helpers.h \
  C:\Users\linfe\cs8\File-simulator\includes/InputBox/InputBox.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIComponent.h \

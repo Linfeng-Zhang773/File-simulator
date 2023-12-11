@@ -105,3 +105,14 @@ void FileReader::ModifyInfoFile(std::vector<std::string> FileInfo, std::string f
 
     outputFile.close();
 }
+
+void FileReader::createNewFile(std::string filepath)
+{
+    std::fstream outputFile(filepath, std::ios::out);
+    if (!outputFile.is_open())
+    {
+        std::cerr << "File Open Failed" << std::endl;
+        exit(1);
+    }
+    outputFile.close();
+}
