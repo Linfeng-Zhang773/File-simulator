@@ -503,8 +503,8 @@ bin/main.exe: CMakeFiles/main.dir/build.make
 bin/main.exe: lib/libsfml-graphics-d.a
 bin/main.exe: lib/libsfml-window-d.a
 bin/main.exe: lib/libsfml-system-d.a
-bin/main.exe: lib/libgtest_main.a
-bin/main.exe: lib/libgtest.a
+bin/main.exe: lib/libgtest_main.dll.a
+bin/main.exe: lib/libgtest.dll.a
 bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 bin/main.exe: CMakeFiles/main.dir/link.txt

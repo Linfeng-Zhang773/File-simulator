@@ -291,6 +291,23 @@ void TypingBox::update()
         {
             SaveLogic();
         }
+        if (v2[0] == "search")
+        {
+            std::string filename = v2[1];
+            SearchLogic(filename);
+        }
+        if (v2[0] == "create")
+        {
+            // command: create filename Under folder
+            //          v2[0]    v2[1]   v2[2]  v2[3]
+            std::string filename = v2[1];
+            std::string parentname = v2[3];
+            CreateLogic(parentname, filename);
+        }
+        else
+        { // this means input command not match any commands
+          //  do nothing
+        }
         this->setTextWithNoLimit("");
     }
     if (TypingBox::content.length() != 0 && this->isFileInput)
@@ -309,9 +326,12 @@ void TypingBox::OpenLogic(std::string filepath)
 {
     FileReader fileReader;
     std::string newPath = filepath.substr(0, filepath.length() - 1) + ".txt";
-    TypingBox::content = fileReader.ReadFile(newPath);
+    std::string msg = fileReader.ReadFile(newPath);
+    if (msg == "error") return;
+    TypingBox::content = msg;
     std::string metaPath = filepath.substr(0, filepath.length() - 1) + "_meta.txt";
     std::vector<std::string> metaData = fileReader.ReadMetaData(metaPath);
+    if (metaData.empty()) return;
     // meta[0] color
     // meta[1] size
     // meta[2] font
@@ -363,7 +383,7 @@ void TypingBox::DeleteLogic(std::string filepath, std::string filename)
     FileReader FileReader2;
     std::string newPath = filepath.substr(0, filepath.length() - 1) + ".txt";
     std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
-
+    if (V.empty()) return;
     std::string metaPath = filepath.substr(0, filepath.length() - 1) + "_meta.txt";
     for (int i = 0; i < V.size(); ++i)
     {
@@ -388,6 +408,7 @@ void TypingBox::RenameLogic(std::string filepath, std::string originalName, std:
 
     FileReader FileReader2;
     std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
+    if (V.empty()) return;
     std::string parent = "";
     int idx = 0;
     for (int i = 0; i < V.size(); ++i)
@@ -437,6 +458,7 @@ void TypingBox::MoveLogic(std::string parent, std::string filename)
     FileReader FileReader2;
     int idx = 0;
     std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
+    if (V.empty()) return;
     for (int i = 0; i < V.size(); ++i)
     {
         if (V[i].find(filename) != std::string::npos)
@@ -459,9 +481,37 @@ void TypingBox::SaveLogic()
     std::string toSaveContent = TypingBox::fileContentToSave;
     FileReader reader;
     reader.ModifyFile(toSaveContent, TypingBox::filePathToSave);
-    // std::vector<std::string> v;
-    // reader.WriteMetaData(v, TypingBox::fileMetaPathToSave);
+    std::vector<std::string> v = {Menu::SELECTED_COLOR, Menu::SELECTED_SIZE, Menu::SELECTED_FONT};
+    reader.WriteMetaData(v, TypingBox::fileMetaPathToSave);
     TypingBox::filePathToSave = "";
     TypingBox::fileMetaPathToSave = "";
     TypingBox::isFileOpen = false;
+}
+
+void TypingBox::SearchLogic(std::string filename)
+{
+    std::vector<std::string> v = BuildFileTree::getFileTree().findAndStorePath(filename);
+    for (auto x : v)
+    {
+        std::cout << x << "/";
+        std::cout << std::endl;
+    }
+}
+
+void TypingBox::CreateLogic(std::string parent, std::string file)
+{
+    FileReader FileReader2;
+    int idx = 0;
+    std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
+    if (V.empty()) return;
+    V.push_back(parent.substr(0, parent.length() - 1) + " " + file + " " + "false");
+    std::string newFilePath = "../../Files/" + file + ".txt";
+    std::string newMetaDataPath = "../../Files/" + file + "_meta.txt";
+    FileReader2.ModifyFile("default", newFilePath);
+    std::vector<std::string> defaultMeta = {"Black", "30", "Comfortaa"};
+    FileReader2.WriteMetaData(defaultMeta, newMetaDataPath);
+    std::vector<std::string> sortedV = SortFileInfo(V);
+    FileReader2.ModifyInfoFile(sortedV, "../../Files/Pathinfo.txt");
+    BuildFileTree::setUp("../../Files/Pathinfo.txt");
+    Application::removeFileTreeAndReAdd(BuildFileTree::getFileTree());
 }

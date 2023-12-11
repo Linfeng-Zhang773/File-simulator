@@ -19,7 +19,7 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->show.setFillColor(sf::Color::Black);
     this->show.setPosition({pos.x + 5, pos.y + 5});
 
-    this->createCommand.setString("How to create file: create filename Under folder ");
+    this->createCommand.setString("How to create file: create filename Under folder");
     this->createCommand.setCharacterSize(24);
     this->createCommand.setFont(Fonts::getFont(OPEN_SANS));
     this->createCommand.setFillColor(sf::Color::Green);

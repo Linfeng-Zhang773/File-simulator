@@ -1,5 +1,6 @@
 #ifndef TYPINGBOX_H
 #define TYPINGBOX_H
+#pragma once
 // Text Input commponent
 #include "../Application/Application.h"
 #include "../BuildFileTree/BuildFileTree.h"
@@ -7,6 +8,7 @@
 #include "../Fonts/Fonts.h"
 #include "../GUIcomponent/GUIcomponent.h"
 #include "../Helpers/helpers.h"
+#include "../Menu/Menu.h"
 #include <SFML/Graphics.hpp>
 #include <cstdio>
 #include <iostream>
@@ -24,7 +26,6 @@ private:
     static std::string fileContentToSave;
     static std::string filePathToSave;
     static std::string fileMetaPathToSave;
-    static bool isFileOpen;
 
     bool isFileInput;
     sf::Text inputText;
@@ -46,6 +47,7 @@ private:
     void inputLogic(int charTyped);
 
 public:
+    static bool isFileOpen;
     TypingBox() = default;
     TypingBox(int fontSize, sf::Vector2f boxSize, sf::Vector2f position, sf::Color textColor, sf::Color boxColor, bool selected, bool isFileInput, std::string textString = "", bool needNewLine = true);
 
@@ -93,6 +95,10 @@ public:
     void MoveLogic(std::string parent, std::string filename);
 
     void SaveLogic();
+
+    void SearchLogic(std::string filename);
+
+        void CreateLogic(std::string parent, std::string file);
 };
 
 #endif

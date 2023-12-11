@@ -6,6 +6,11 @@ void BuildFileTree::setUp(std::string filepath)
     BuildFileTree::Filetree.reset();
     FileReader Reader;
     std::vector<std::string> theFileInfo = Reader.ReadInfoFile(filepath);
+    if (theFileInfo.empty())
+    {
+        std::cout << "failed to load the file info" << std::endl;
+        exit(1);
+    }
     for (int i = 0; i < theFileInfo.size(); ++i)
     {
         std::vector<std::string> s = extractStrings(theFileInfo[i]);

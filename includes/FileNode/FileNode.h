@@ -24,7 +24,7 @@ public:
     void addEventHandler(sf::RenderWindow& window, sf::Event event) override;
     void update() override;
     void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
-       SnapShot& getSnapshot() override;
+    SnapShot& getSnapshot() override;
     void applySnapshot(const SnapShot& snapshot) override;
 };
 

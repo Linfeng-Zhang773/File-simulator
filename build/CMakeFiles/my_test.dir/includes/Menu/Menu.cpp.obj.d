@@ -1,32 +1,24 @@
 CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:\Users\linfe\cs8\File-simulator\includes\Menu\Menu.cpp \
  C:\Users\linfe\cs8\File-simulator\includes\Menu\Menu.h \
- C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/string \
+ C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Window.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Time.hpp \
+ C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ostream \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ios \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iosfwd \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++config.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/os_defines.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/cpu_defines.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stringfwd.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/memoryfwd.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/char_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_algobase.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functexcept.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_defines.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cpp_type_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/type_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/numeric_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_pair.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/move.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/concept_check.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/type_traits \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator_base_types.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator_base_funcs.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/debug/assertions.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ptr_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/debug/debug.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/predefined_ops.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/postypes.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cwchar \
  C:/mingw32/i686-w64-mingw32/include/wchar.h \
@@ -43,38 +35,46 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/mingw32/i686-w64-mingw32/include/swprintf.inl \
  C:/mingw32/i686-w64-mingw32/include/sec_api/wchar_s.h \
  C:/mingw32/i686-w64-mingw32/include/_mingw_print_pop.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cstdint \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stdint.h \
- C:/mingw32/i686-w64-mingw32/include/stdint.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stddef.h \
- C:/mingw32/i686-w64-mingw32/include/stddef.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/new_allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/new \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/exception \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_ptr.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_defines.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cxxabi_init_exception.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stddef.h \
+ C:/mingw32/i686-w64-mingw32/include/stddef.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/typeinfo \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/hash_bytes.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/new \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/nested_exception.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/move.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/concept_check.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/type_traits \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/char_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_algobase.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functexcept.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cpp_type_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/type_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/numeric_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_pair.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator_base_types.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator_base_funcs.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/debug/assertions.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_iterator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ptr_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/debug/debug.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/predefined_ops.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cstdint \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stdint.h \
+ C:/mingw32/i686-w64-mingw32/include/stdint.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/localefwd.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++locale.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/clocale \
  C:/mingw32/i686-w64-mingw32/include/locale.h \
  C:/mingw32/i686-w64-mingw32/include/stdio.h \
  C:/mingw32/i686-w64-mingw32/include/sec_api/stdio_s.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iosfwd \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cctype \
  C:/mingw32/i686-w64-mingw32/include/ctype.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ostream_insert.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cxxabi_forced.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_function.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward/binders.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/range_access.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/initializer_list \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/basic_string.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ios_base.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/atomicity.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/gthr.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/gthr-default.h \
@@ -93,6 +93,18 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/mingw32/i686-w64-mingw32/include/pthread_compat.h \
  C:/mingw32/i686-w64-mingw32/include/pthread_unistd.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/atomic_word.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/locale_classes.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/string \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/new_allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ostream_insert.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cxxabi_forced.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_function.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward/binders.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/range_access.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/initializer_list \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/basic_string.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/alloc_traits.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/alloc_traits.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/string_conversions.h \
@@ -106,37 +118,10 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cerrno \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functional_hash.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/basic_string.tcc \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShotInterface/SnapShotInterface.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
- C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
- C:/Users/linfe/cs8/File-simulator/includes/States/statesEnum.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/map \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_tree.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/aligned_buffer.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_map.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/tuple \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/utility \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/array \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stdexcept \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/invoke.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multimap.h \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Window.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Config.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Export.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Time.hpp \
- C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Err.hpp \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ostream \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ios \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ios_base.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/locale_classes.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/locale_classes.tcc \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/system_error \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/error_constants.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stdexcept \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/streambuf \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/streambuf.tcc \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/basic_ios.h \
@@ -159,6 +144,8 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/String.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/algorithm \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/utility \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_algo.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/algorithmfwd.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_heap.h \
@@ -181,6 +168,10 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocator.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/codecvt.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/unique_ptr.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/tuple \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/array \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/invoke.h \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/System/Utf.inl \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iterator \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/istream \
@@ -236,6 +227,11 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Glyph.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/map \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_tree.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/aligned_buffer.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_map.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multimap.h \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/View.hpp \
@@ -247,9 +243,14 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
+ C:/Users/linfe/cs8/File-simulator/includes/SnapShotInterface/SnapShotInterface.h \
+ C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
+ C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
+ C:/Users/linfe/cs8/File-simulator/includes/States/statesEnum.h \
  C:/Users/linfe/cs8/File-simulator/includes/Item/Item.h \
  C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
- C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIComponent.h \
  C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
  C:/Users/linfe/cs8/File-simulator/includes/ItemList/ItemList.h \
@@ -260,4 +261,32 @@ CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
  C:/Users/linfe/cs8/File-simulator/includes/Item/Item.h \
  C:/Users/linfe/cs8/File-simulator/includes/Mouse/MouseEvents.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iostream
+ C:/Users/linfe/cs8/File-simulator/includes/TypingBox/typingBox.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Application/Application.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIComponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/BuildFileTree/BuildFileTree.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FileTree/FileTree.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FileNode/FileNode.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FileItem/FileItem.h \
+ C:/Users/linfe/cs8/File-simulator/includes/FontEnum/FontEnum.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Item/Item.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/iostream \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/set \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_set.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multiset.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/sstream \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/sstream.tcc \
+ C:/Users/linfe/cs8/File-simulator/includes/fileReader/FileReader.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/fstream \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/basic_file.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++io.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/fstream.tcc \
+ C:/Users/linfe/cs8/File-simulator/includes/FileReader/FileReader.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Fonts/Fonts.h \
+ C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
+ C:/Users/linfe/cs8/File-simulator/includes/Helpers/helpers.h

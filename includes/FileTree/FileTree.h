@@ -43,6 +43,27 @@ public:
     void drawTree(FileNode* theRoot, sf::RenderTarget& window, sf::RenderStates states) const;
     SnapShot& getSnapshot() override;
     void applySnapshot(const SnapShot& snapshot) override;
+    std::vector<std::string> findAndStorePath(const std::string& data)
+    {
+        std::vector<std::string> path;
+        findAndStorePathHelper(this->root, data, path);
+        return path;
+    }
+
+private:
+    inline bool findAndStorePathHelper(FileNode* currentNode, const std::string& data, std::vector<std::string>& path)
+    {
+        if (currentNode == nullptr) return false;
+        path.push_back(currentNode->getData().getText());
+
+        if (currentNode->getData().getText() == data) return true;
+
+        for (FileNode* child : currentNode->children)
+            if (this->findAndStorePathHelper(child, data, path)) return true;
+
+        path.pop_back();
+        return false;
+    }
 };
 
 #endif

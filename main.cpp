@@ -42,7 +42,7 @@ int main()
     Background wallpaper({0, 0});
     // TextInput commandLine(false, {800, 100}, {430, 850}, 670);
     // TextInput FileInput(true, {700, 500}, {500, 300}, 630);
-    TypingBox commandLine(30, sf::Vector2f(800, 100), sf::Vector2f(420, 850), sf::Color::Red, sf::Color::White, false, false);
+    TypingBox commandLine(30, sf::Vector2f(800, 100), sf::Vector2f(420, 850), sf::Color::Red, sf::Color::White, false, false, "", false);
     TypingBox fileInput(30, sf::Vector2f(650, 500), sf::Vector2f(580, 300), sf::Color::Red, sf::Color::White, false, true);
     commandLine.setLimit(false);
     commandLine.setFont(Fonts::getFont(OPEN_SANS));
@@ -76,9 +76,9 @@ int main()
     size.setBoxPosition({830, 0}, "Font Size");
     size.setProperPosition();
 
-    Font.addItem("arial");
-    Font.addItem("Times New Roman");
-    Font.addItem("comfortaa");
+    Font.addItem("Arial");
+    Font.addItem("TimesNewRoman");
+    Font.addItem("Comfortaa");
     Font.setBoxPosition({1030, 0}, "Fonts");
     Font.setProperPosition();
 

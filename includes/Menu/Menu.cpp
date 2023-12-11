@@ -1,4 +1,7 @@
 #include "Menu.h"
+std::string Menu::SELECTED_COLOR = "Black";
+std::string Menu::SELECTED_FONT = "Comfortaa";
+std::string Menu::SELECTED_SIZE = "30";
 void Menu::addItem(const std::string& Name)
 {
     item.Initialize(Name);
@@ -12,6 +15,8 @@ void Menu::chooseItem(const Item& item)
 }
 void Menu::draw(sf::RenderTarget& window, sf::RenderStates states) const
 {
+    if (!TypingBox::isFileOpen) return;
+
     if (isItemListVisible)
     {
         displayList(window);
@@ -20,13 +25,56 @@ void Menu::draw(sf::RenderTarget& window, sf::RenderStates states) const
     inputBox.draw(window, states);
     inputBox.applyItem(window);
 }
+void Menu::setSelectedOption(int i)
+{
+    if (this->List.at(i).getText().getString() == "Black")
+    {
+        Menu::SELECTED_COLOR = "Black";
+    }
+    else if (this->List.at(i).getText().getString() == "Blue")
+    {
+        Menu::SELECTED_COLOR = "Blue";
+    }
+    else if (this->List.at(i).getText().getString() == "Red")
+    {
+        Menu::SELECTED_COLOR = "Red";
+    }
+    else if (this->List.at(i).getText().getString() == "20")
+    {
+        Menu::SELECTED_SIZE = "20";
+    }
+    else if (this->List.at(i).getText().getString() == "25")
+    {
+        Menu::SELECTED_SIZE = "25";
+    }
+    else if (this->List.at(i).getText().getString() == "30")
+    {
+        Menu::SELECTED_SIZE = "30";
+    }
+    else if (this->List.at(i).getText().getString() == "Arial")
+    {
+        Menu::SELECTED_FONT = "Arial";
+    }
+    else if (this->List.at(i).getText().getString() == "TimesNewRoman")
+    {
+        Menu::SELECTED_FONT = "TimesNewRoman";
+    }
+    else if (this->List.at(i).getText().getString() == "Comfortaa")
+    {
+        Menu::SELECTED_FONT = "Comfortaa";
+    }
+}
 void Menu::addEventHandler(sf::RenderWindow& window, sf::Event event)
 {
+    if (!TypingBox::isFileOpen) return;
     for (int i = 0; i < List.size(); ++i)
     {
         if (MouseEvents<Item>::mouseClicked(List.at(i), window))
         {
+            // List.at(i) gives Item, item->getText()
+            this->setSelectedOption(i);
             chooseItem(List.at(i));
+            std::cout << "selected:" << this->SELECTED_SIZE << "\n";
             isItemListVisible = false;
         }
 
@@ -49,7 +97,7 @@ void Menu::addEventHandler(sf::RenderWindow& window, sf::Event event)
 }
 void Menu::update()
 {
-
+    if (!TypingBox::isFileOpen) return;
     this->inputBox.update();
 }
 
