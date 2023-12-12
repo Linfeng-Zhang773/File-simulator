@@ -67,12 +67,6 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\History\\History.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\History\\History.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/History/History.cpp",
-  "output": "CMakeFiles/my_test.dir/includes/History/History.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\InputBox\\InputBox.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\InputBox\\InputBox.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/InputBox/InputBox.cpp",
   "output": "CMakeFiles/my_test.dir/includes/InputBox/InputBox.cpp.obj"
@@ -97,12 +91,6 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\Letter\\Letter.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\Letter\\Letter.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/Letter/Letter.cpp",
-  "output": "CMakeFiles/my_test.dir/includes/Letter/Letter.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\Menu\\Menu.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\Menu\\Menu.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.cpp",
   "output": "CMakeFiles/my_test.dir/includes/Menu/Menu.cpp.obj"
@@ -115,27 +103,9 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\MultiText\\MultiText.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\MultiText\\MultiText.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/MultiText/MultiText.cpp",
-  "output": "CMakeFiles/my_test.dir/includes/MultiText/MultiText.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\SnapShot\\SnapShot.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\SnapShot\\SnapShot.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.cpp",
-  "output": "CMakeFiles/my_test.dir/includes/SnapShot/SnapShot.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\States\\States.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\States\\States.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/States/States.cpp",
   "output": "CMakeFiles/my_test.dir/includes/States/States.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/my_test.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\my_test.dir\\includes\\TextInput\\TextInput.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\TextInput\\TextInput.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/TextInput/TextInput.cpp",
-  "output": "CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj"
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
@@ -217,12 +187,6 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\History\\History.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\History\\History.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/History/History.cpp",
-  "output": "CMakeFiles/main.dir/includes/History/History.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\InputBox\\InputBox.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\InputBox\\InputBox.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/InputBox/InputBox.cpp",
   "output": "CMakeFiles/main.dir/includes/InputBox/InputBox.cpp.obj"
@@ -247,12 +211,6 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\Letter\\Letter.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\Letter\\Letter.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/Letter/Letter.cpp",
-  "output": "CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\Menu\\Menu.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\Menu\\Menu.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/Menu/Menu.cpp",
   "output": "CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj"
@@ -265,27 +223,9 @@
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\MultiText\\MultiText.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\MultiText\\MultiText.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/MultiText/MultiText.cpp",
-  "output": "CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\SnapShot\\SnapShot.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\SnapShot\\SnapShot.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.cpp",
-  "output": "CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
   "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\States\\States.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\States\\States.cpp",
   "file": "C:/Users/linfe/cs8/File-simulator/includes/States/States.cpp",
   "output": "CMakeFiles/main.dir/includes/States/States.cpp.obj"
-},
-{
-  "directory": "C:/Users/linfe/cs8/File-simulator/build",
-  "command": "C:\\mingw32\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp  -fprofile-arcs -ftest-coverage -g -std=gnu++14 -o CMakeFiles\\main.dir\\includes\\TextInput\\TextInput.cpp.obj -c C:\\Users\\linfe\\cs8\\File-simulator\\includes\\TextInput\\TextInput.cpp",
-  "file": "C:/Users/linfe/cs8/File-simulator/includes/TextInput/TextInput.cpp",
-  "output": "CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj"
 },
 {
   "directory": "C:/Users/linfe/cs8/File-simulator/build",

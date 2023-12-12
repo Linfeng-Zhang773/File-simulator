@@ -244,9 +244,6 @@ CMakeFiles/main.dir/includes/Menu/Menu.cpp.obj: \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
  C:/Users/linfe/cs8/File-simulator/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShotInterface/SnapShotInterface.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
  C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
  C:/Users/linfe/cs8/File-simulator/includes/States/statesEnum.h \
  C:/Users/linfe/cs8/File-simulator/includes/Item/Item.h \

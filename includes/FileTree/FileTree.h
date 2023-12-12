@@ -41,8 +41,7 @@ public:
     void update() override;
     void draw(sf::RenderTarget& window, sf::RenderStates states) const override;
     void drawTree(FileNode* theRoot, sf::RenderTarget& window, sf::RenderStates states) const;
-    SnapShot& getSnapshot() override;
-    void applySnapshot(const SnapShot& snapshot) override;
+
     std::vector<std::string> findAndStorePath(const std::string& data)
     {
         std::vector<std::string> path;

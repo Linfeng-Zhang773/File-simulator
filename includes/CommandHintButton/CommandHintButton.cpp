@@ -110,5 +110,3 @@ void CommandHintButton::draw(sf::RenderTarget& window, sf::RenderStates states) 
         window.draw(this->createCommand);
     }
 }
-SnapShot& CommandHintButton::getSnapshot() {}
-void CommandHintButton::applySnapshot(const SnapShot& snapshot) {}

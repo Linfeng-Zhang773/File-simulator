@@ -124,5 +124,3 @@ void FileTree::drawTree(FileNode* theRoot, sf::RenderTarget& window, sf::RenderS
     }
 }
 
-SnapShot& FileTree::getSnapshot() {}
-void FileTree::applySnapshot(const SnapShot& snapshot) {}

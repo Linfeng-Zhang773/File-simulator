@@ -57,5 +57,3 @@ void Box::setPosistion(const sf::Vector2f& pos)
     this->box.setPosition(pos);
 }
 
-SnapShot& Box::getSnapshot() {}
-void Box::applySnapshot(const SnapShot& snapshot) {}

@@ -611,33 +611,6 @@ includes/Fonts/Fonts.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/Fonts/Fonts.cpp.s
 .PHONY : includes/Fonts/Fonts.cpp.s
 
-includes/History/History.obj: includes/History/History.cpp.obj
-.PHONY : includes/History/History.obj
-
-# target to build an object file
-includes/History/History.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/History/History.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/History/History.cpp.obj
-.PHONY : includes/History/History.cpp.obj
-
-includes/History/History.i: includes/History/History.cpp.i
-.PHONY : includes/History/History.i
-
-# target to preprocess a source file
-includes/History/History.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/History/History.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/History/History.cpp.i
-.PHONY : includes/History/History.cpp.i
-
-includes/History/History.s: includes/History/History.cpp.s
-.PHONY : includes/History/History.s
-
-# target to generate assembly for a file
-includes/History/History.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/History/History.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/History/History.cpp.s
-.PHONY : includes/History/History.cpp.s
-
 includes/InputBox/InputBox.obj: includes/InputBox/InputBox.cpp.obj
 .PHONY : includes/InputBox/InputBox.obj
 
@@ -746,33 +719,6 @@ includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.s
 .PHONY : includes/KeyBoardShortCuts/KeyBoardShortCuts.cpp.s
 
-includes/Letter/Letter.obj: includes/Letter/Letter.cpp.obj
-.PHONY : includes/Letter/Letter.obj
-
-# target to build an object file
-includes/Letter/Letter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/Letter/Letter.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/Letter/Letter.cpp.obj
-.PHONY : includes/Letter/Letter.cpp.obj
-
-includes/Letter/Letter.i: includes/Letter/Letter.cpp.i
-.PHONY : includes/Letter/Letter.i
-
-# target to preprocess a source file
-includes/Letter/Letter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/Letter/Letter.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/Letter/Letter.cpp.i
-.PHONY : includes/Letter/Letter.cpp.i
-
-includes/Letter/Letter.s: includes/Letter/Letter.cpp.s
-.PHONY : includes/Letter/Letter.s
-
-# target to generate assembly for a file
-includes/Letter/Letter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/Letter/Letter.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/Letter/Letter.cpp.s
-.PHONY : includes/Letter/Letter.cpp.s
-
 includes/Menu/Menu.obj: includes/Menu/Menu.cpp.obj
 .PHONY : includes/Menu/Menu.obj
 
@@ -827,60 +773,6 @@ includes/MenuBar/MenuBar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.s
 .PHONY : includes/MenuBar/MenuBar.cpp.s
 
-includes/MultiText/MultiText.obj: includes/MultiText/MultiText.cpp.obj
-.PHONY : includes/MultiText/MultiText.obj
-
-# target to build an object file
-includes/MultiText/MultiText.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/MultiText/MultiText.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.obj
-.PHONY : includes/MultiText/MultiText.cpp.obj
-
-includes/MultiText/MultiText.i: includes/MultiText/MultiText.cpp.i
-.PHONY : includes/MultiText/MultiText.i
-
-# target to preprocess a source file
-includes/MultiText/MultiText.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/MultiText/MultiText.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.i
-.PHONY : includes/MultiText/MultiText.cpp.i
-
-includes/MultiText/MultiText.s: includes/MultiText/MultiText.cpp.s
-.PHONY : includes/MultiText/MultiText.s
-
-# target to generate assembly for a file
-includes/MultiText/MultiText.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/MultiText/MultiText.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/MultiText/MultiText.cpp.s
-.PHONY : includes/MultiText/MultiText.cpp.s
-
-includes/SnapShot/SnapShot.obj: includes/SnapShot/SnapShot.cpp.obj
-.PHONY : includes/SnapShot/SnapShot.obj
-
-# target to build an object file
-includes/SnapShot/SnapShot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/SnapShot/SnapShot.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.obj
-.PHONY : includes/SnapShot/SnapShot.cpp.obj
-
-includes/SnapShot/SnapShot.i: includes/SnapShot/SnapShot.cpp.i
-.PHONY : includes/SnapShot/SnapShot.i
-
-# target to preprocess a source file
-includes/SnapShot/SnapShot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/SnapShot/SnapShot.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.i
-.PHONY : includes/SnapShot/SnapShot.cpp.i
-
-includes/SnapShot/SnapShot.s: includes/SnapShot/SnapShot.cpp.s
-.PHONY : includes/SnapShot/SnapShot.s
-
-# target to generate assembly for a file
-includes/SnapShot/SnapShot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/SnapShot/SnapShot.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/SnapShot/SnapShot.cpp.s
-.PHONY : includes/SnapShot/SnapShot.cpp.s
-
 includes/States/States.obj: includes/States/States.cpp.obj
 .PHONY : includes/States/States.obj
 
@@ -907,33 +799,6 @@ includes/States/States.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/States/States.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/States/States.cpp.s
 .PHONY : includes/States/States.cpp.s
-
-includes/TextInput/TextInput.obj: includes/TextInput/TextInput.cpp.obj
-.PHONY : includes/TextInput/TextInput.obj
-
-# target to build an object file
-includes/TextInput/TextInput.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.obj
-.PHONY : includes/TextInput/TextInput.cpp.obj
-
-includes/TextInput/TextInput.i: includes/TextInput/TextInput.cpp.i
-.PHONY : includes/TextInput/TextInput.i
-
-# target to preprocess a source file
-includes/TextInput/TextInput.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.i
-.PHONY : includes/TextInput/TextInput.cpp.i
-
-includes/TextInput/TextInput.s: includes/TextInput/TextInput.cpp.s
-.PHONY : includes/TextInput/TextInput.s
-
-# target to generate assembly for a file
-includes/TextInput/TextInput.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_test.dir\build.make CMakeFiles/my_test.dir/includes/TextInput/TextInput.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/includes/TextInput/TextInput.cpp.s
-.PHONY : includes/TextInput/TextInput.cpp.s
 
 includes/TypingBox/typingBox.obj: includes/TypingBox/typingBox.cpp.obj
 .PHONY : includes/TypingBox/typingBox.obj
@@ -1070,9 +935,6 @@ help:
 	@echo ... includes/Fonts/Fonts.obj
 	@echo ... includes/Fonts/Fonts.i
 	@echo ... includes/Fonts/Fonts.s
-	@echo ... includes/History/History.obj
-	@echo ... includes/History/History.i
-	@echo ... includes/History/History.s
 	@echo ... includes/InputBox/InputBox.obj
 	@echo ... includes/InputBox/InputBox.i
 	@echo ... includes/InputBox/InputBox.s
@@ -1085,27 +947,15 @@ help:
 	@echo ... includes/KeyBoardShortCuts/KeyBoardShortCuts.obj
 	@echo ... includes/KeyBoardShortCuts/KeyBoardShortCuts.i
 	@echo ... includes/KeyBoardShortCuts/KeyBoardShortCuts.s
-	@echo ... includes/Letter/Letter.obj
-	@echo ... includes/Letter/Letter.i
-	@echo ... includes/Letter/Letter.s
 	@echo ... includes/Menu/Menu.obj
 	@echo ... includes/Menu/Menu.i
 	@echo ... includes/Menu/Menu.s
 	@echo ... includes/MenuBar/MenuBar.obj
 	@echo ... includes/MenuBar/MenuBar.i
 	@echo ... includes/MenuBar/MenuBar.s
-	@echo ... includes/MultiText/MultiText.obj
-	@echo ... includes/MultiText/MultiText.i
-	@echo ... includes/MultiText/MultiText.s
-	@echo ... includes/SnapShot/SnapShot.obj
-	@echo ... includes/SnapShot/SnapShot.i
-	@echo ... includes/SnapShot/SnapShot.s
 	@echo ... includes/States/States.obj
 	@echo ... includes/States/States.i
 	@echo ... includes/States/States.s
-	@echo ... includes/TextInput/TextInput.obj
-	@echo ... includes/TextInput/TextInput.i
-	@echo ... includes/TextInput/TextInput.s
 	@echo ... includes/TypingBox/typingBox.obj
 	@echo ... includes/TypingBox/typingBox.i
 	@echo ... includes/TypingBox/typingBox.s

@@ -10,7 +10,6 @@
 #include "includes/InputBox/InputBox.h"
 #include "includes/Menu/Menu.h"
 #include "includes/MenuBar/MenuBar.h"
-#include "includes/TextInput/TextInput.h"
 #include "includes/TypingBox/typingBox.h"
 #include <SFML/Graphics.hpp>
 int main()

@@ -33,8 +33,6 @@ public:
     void displayList(sf::RenderTarget& window) const;
     void setProperPosition();
     void changeSize(const sf::Vector2f& size);
-    SnapShot& getSnapshot() override;
-    void applySnapshot(const SnapShot& snapshot) override;
 };
 
 #endif

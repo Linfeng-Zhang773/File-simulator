@@ -48,6 +48,3 @@ void MenuBar::update()
         menuBar[i].update();
     }
 }
-
-SnapShot& MenuBar::getSnapshot() {}
-void MenuBar::applySnapshot(const SnapShot& snapshot) {}

@@ -35,5 +35,3 @@ void Background::draw(sf::RenderTarget& window, sf::RenderStates states) const
 {
     window.draw(this->icon);
 }
-SnapShot& Background::getSnapshot() {}
-void Background::applySnapshot(const SnapShot& snapshot) {}

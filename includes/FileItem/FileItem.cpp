@@ -97,5 +97,3 @@ void FileItem::draw(sf::RenderTarget& window, sf::RenderStates states) const
     window.draw(this->text);
 }
 
-SnapShot& FileItem::getSnapshot() {}
-void FileItem::applySnapshot(const SnapShot& snapshot) {}

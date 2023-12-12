@@ -137,5 +137,3 @@ void Menu::changeSize(const sf::Vector2f& size)
     // std::cout << List.size();
 }
 
-SnapShot& Menu::getSnapshot() {}
-void Menu::applySnapshot(const SnapShot& snapshot) {}

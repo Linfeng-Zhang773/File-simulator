@@ -2,15 +2,14 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:\Users\linfe\cs8\File-simulator\includes\MenuBar\MenuBar.cpp \
  C:\Users\linfe\cs8\File-simulator\includes\MenuBar\MenuBar.h \
  C:/Users/linfe/cs8/File-simulator/includes/GUIcomponent/GUIcomponent.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/string \
+ C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
+ C:/Users/linfe/cs8/File-simulator/includes/States/statesEnum.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/map \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_tree.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_algobase.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++config.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/os_defines.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/cpu_defines.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stringfwd.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/memoryfwd.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/char_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_algobase.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functexcept.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_defines.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cpp_type_traits.h \
@@ -27,9 +26,16 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ptr_traits.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/debug/debug.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/predefined_ops.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/postypes.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cwchar \
- C:/mingw32/i686-w64-mingw32/include/wchar.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/new_allocator.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/new \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/exception \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_ptr.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cxxabi_init_exception.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stddef.h \
+ C:/mingw32/i686-w64-mingw32/include/stddef.h \
  C:/mingw32/i686-w64-mingw32/include/crtdefs.h \
  C:/mingw32/i686-w64-mingw32/include/_mingw.h \
  C:/mingw32/i686-w64-mingw32/include/_mingw_mac.h \
@@ -37,6 +43,28 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:/mingw32/i686-w64-mingw32/include/vadefs.h \
  C:/mingw32/i686-w64-mingw32/include/sdks/_mingw_directx.h \
  C:/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/typeinfo \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/hash_bytes.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/nested_exception.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/memoryfwd.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_function.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward/binders.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/alloc_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/alloc_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/aligned_buffer.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_map.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/initializer_list \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/tuple \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/utility \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/array \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stdexcept \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/string \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stringfwd.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/char_traits.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/postypes.h \
+ C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cwchar \
+ C:/mingw32/i686-w64-mingw32/include/wchar.h \
  C:/mingw32/i686-w64-mingw32/include/_mingw_print_push.h \
  C:/mingw32/i686-w64-mingw32/include/_mingw_off_t.h \
  C:/mingw32/i686-w64-mingw32/include/_mingw_stat64.h \
@@ -46,19 +74,6 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cstdint \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stdint.h \
  C:/mingw32/i686-w64-mingw32/include/stdint.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/stddef.h \
- C:/mingw32/i686-w64-mingw32/include/stddef.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/new_allocator.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/new \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/exception \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/exception_ptr.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cxxabi_init_exception.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/typeinfo \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/hash_bytes.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/nested_exception.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/localefwd.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/c++locale.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/clocale \
@@ -70,10 +85,7 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:/mingw32/i686-w64-mingw32/include/ctype.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/ostream_insert.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/cxxabi_forced.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_function.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward/binders.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/range_access.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/initializer_list \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/basic_string.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/atomicity.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/gthr.h \
@@ -93,8 +105,6 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:/mingw32/i686-w64-mingw32/include/pthread_compat.h \
  C:/mingw32/i686-w64-mingw32/include/pthread_unistd.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32/bits/atomic_word.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/alloc_traits.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/alloc_traits.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/string_conversions.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cstdlib \
  C:/mingw32/i686-w64-mingw32/include/stdlib.h \
@@ -106,19 +116,6 @@ CMakeFiles/main.dir/includes/MenuBar/MenuBar.cpp.obj: \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/cerrno \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/functional_hash.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/basic_string.tcc \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShotInterface/SnapShotInterface.h \
- C:/Users/linfe/cs8/File-simulator/includes/SnapShot/SnapShot.h \
- C:/Users/linfe/cs8/File-simulator/includes/States/States.h \
- C:/Users/linfe/cs8/File-simulator/includes/States/statesEnum.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/map \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_tree.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/ext/aligned_buffer.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_map.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/tuple \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/utility \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/array \
- C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/stdexcept \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/invoke.h \
  C:/mingw32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/bits/stl_multimap.h \

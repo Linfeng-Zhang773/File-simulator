@@ -37,6 +37,3 @@ bool FileNode::getClicked()
 {
     return this->isClicked;
 }
-
-SnapShot& FileNode::getSnapshot() {}
-void FileNode::applySnapshot(const SnapShot& snapshot) {}

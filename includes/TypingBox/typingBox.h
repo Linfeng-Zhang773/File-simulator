@@ -82,10 +82,6 @@ public:
     void addEventHandler(sf::RenderWindow& window, sf::Event event) override;
     void update() override;
 
-    // from SnapshotInterface
-    SnapShot& getSnapshot() override {}
-    void applySnapshot(const SnapShot& snapshot) override {}
-
     void OpenLogic(std::string filepath);
 
     void DeleteLogic(std::string filepath, std::string filename);
@@ -98,7 +94,7 @@ public:
 
     void SearchLogic(std::string filename);
 
-        void CreateLogic(std::string parent, std::string file);
+    void CreateLogic(std::string parent, std::string file);
 };
 
 #endif
