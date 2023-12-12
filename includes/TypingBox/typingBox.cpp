@@ -495,13 +495,39 @@ void TypingBox::SaveLogic()
 
 void TypingBox::SearchLogic(std::string filename)
 {
+    std::string path;
     // std::cout << "searching...";
     std::vector<std::string> v = BuildFileTree::getFileTree().findAndStorePath(filename);
     for (auto x : v)
     {
-        std::cout << x << "/";
+        path += (x + "/");
     }
-    std::cout << std::endl;
+    sf::Text thePath;
+    sf::RenderWindow window3(sf::VideoMode(400, 200), "FilePath");
+    thePath.setCharacterSize(30);
+    thePath.setFillColor(sf::Color::Black);
+    thePath.setPosition(100.f, 100.f);
+    thePath.setString(path);
+    thePath.setFont(Fonts::getFont(OPEN_SANS));
+    while (window3.isOpen())
+    {
+
+        sf::Event event;
+        while (window3.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+            {
+
+                window3.close();
+            }
+        }
+
+        window3.clear(sf::Color::White);
+
+        window3.draw(thePath);
+
+        window3.display();
+    }
 }
 
 void TypingBox::CreateLogic(std::string parent, std::string file)
