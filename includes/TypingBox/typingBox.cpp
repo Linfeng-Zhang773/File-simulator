@@ -294,7 +294,12 @@ void TypingBox::update()
         if (v2[0] == "search")
         {
             std::string filename = v2[1];
-            SearchLogic(filename);
+            // if (filename != "file_1")
+            // {
+            //     std::cout << filename << "1" << std::endl;
+            //     std::cout << "path wrong!" << std::endl;
+            // }
+            SearchLogic(filename.substr(0, filename.length() - 1));
         }
         if (v2[0] == "create")
         {
@@ -490,21 +495,31 @@ void TypingBox::SaveLogic()
 
 void TypingBox::SearchLogic(std::string filename)
 {
+    // std::cout << "searching...";
     std::vector<std::string> v = BuildFileTree::getFileTree().findAndStorePath(filename);
     for (auto x : v)
     {
         std::cout << x << "/";
-        std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 
 void TypingBox::CreateLogic(std::string parent, std::string file)
 {
-    FileReader FileReader2;
     int idx = 0;
+    FileReader FileReader2;
     std::vector<std::string> V = FileReader2.ReadInfoFile("../../Files/Pathinfo.txt");
     if (V.empty()) return;
-    V.push_back(parent.substr(0, parent.length() - 1) + " " + file + " " + "false");
+    for (int i = 0; i < V.size(); ++i)
+    {
+        if (V[i].find(parent) != std::string::npos)
+        {
+
+            idx = i;
+            break;
+        }
+    }
+    V.insert(V.begin() + idx + 1, parent.substr(0, parent.length() - 1) + " " + file + " " + "false");
     std::string newFilePath = "../../Files/" + file + ".txt";
     std::string newMetaDataPath = "../../Files/" + file + "_meta.txt";
     FileReader2.ModifyFile("default", newFilePath);

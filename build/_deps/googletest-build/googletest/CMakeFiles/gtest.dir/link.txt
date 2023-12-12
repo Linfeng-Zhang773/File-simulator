@@ -1,3 +1,2 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\gtest.dir/objects.a
-C:\mingw32\bin\ar.exe qc CMakeFiles\gtest.dir/objects.a @CMakeFiles\gtest.dir\objects1.rsp
-C:\mingw32\bin\g++.exe  -fprofile-arcs -ftest-coverage -g -shared -o ..\..\..\bin\libgtest.dll -Wl,--out-implib,..\..\..\lib\libgtest.dll.a -Wl,--major-image-version,1,--minor-image-version,13 -Wl,--whole-archive CMakeFiles\gtest.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\gtest.dir\linkLibs.rsp
+C:\mingw32\bin\ar.exe qc ..\..\..\lib\libgtest.a "CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+C:\mingw32\bin\ranlib.exe ..\..\..\lib\libgtest.a
