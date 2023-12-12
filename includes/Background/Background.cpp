@@ -3,7 +3,7 @@
 sf::Texture Background::BackGroundFile = []() -> sf::Texture
 {
     sf::Texture texture;
-    texture.loadFromFile("assets/wallpaper.png");
+    texture.loadFromFile("assets/classicWallpaper.jpg");
 
     return texture;
 }();
@@ -11,7 +11,7 @@ Background::Background() {}
 Background::Background(sf::Vector2f pos)
 {
     this->icon.setTexture(BackGroundFile);
-    this->icon.setScale(0.5f, 0.5f);
+    this->icon.setScale(1.1f, 1.1f);
     this->icon.setPosition(pos);
 }
 

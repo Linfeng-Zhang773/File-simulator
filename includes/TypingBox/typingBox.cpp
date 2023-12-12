@@ -26,7 +26,7 @@ TypingBox::TypingBox(int fontSize, sf::Vector2f boxSize, sf::Vector2f position, 
 
     this->label.setString("");
     this->label.setCharacterSize(50);
-    this->label.setFillColor(sf::Color::Red);
+    this->label.setFillColor(sf::Color::Black);
     this->label.setFont(Fonts::getFont(OPEN_SANS));
     this->label.setPosition({0, 0});
 

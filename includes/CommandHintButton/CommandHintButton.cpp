@@ -22,43 +22,43 @@ CommandHintButton::CommandHintButton(sf::Vector2f size, sf::Vector2f pos)
     this->createCommand.setString("How to create file: create filename Under folder");
     this->createCommand.setCharacterSize(24);
     this->createCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->createCommand.setFillColor(sf::Color::Green);
+    this->createCommand.setFillColor(sf::Color::Black);
     this->createCommand.setPosition({pos.x, pos.y + 220});
 
     this->openCommand.setString("How to Open file: cd filepath");
     this->openCommand.setCharacterSize(24);
     this->openCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->openCommand.setFillColor(sf::Color::Green);
+    this->openCommand.setFillColor(sf::Color::Black);
     this->openCommand.setPosition({pos.x, pos.y + 40});
 
     this->deleteCommand.setString("How to Delete file: delete filepath");
     this->deleteCommand.setCharacterSize(24);
     this->deleteCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->deleteCommand.setFillColor(sf::Color::Green);
+    this->deleteCommand.setFillColor(sf::Color::Black);
     this->deleteCommand.setPosition({pos.x, pos.y + 70});
 
     this->renameCommand.setString("How to Rename file: rename filepath to name");
     this->renameCommand.setCharacterSize(24);
     this->renameCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->renameCommand.setFillColor(sf::Color::Green);
+    this->renameCommand.setFillColor(sf::Color::Black);
     this->renameCommand.setPosition({pos.x, pos.y + 100});
 
     this->moveCommand.setString("How to move file: move filename to folder");
     this->moveCommand.setCharacterSize(24);
     this->moveCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->moveCommand.setFillColor(sf::Color::Green);
+    this->moveCommand.setFillColor(sf::Color::Black);
     this->moveCommand.setPosition({pos.x, pos.y + 130});
 
     this->searchCommand.setString("How to search file: search filename");
     this->searchCommand.setCharacterSize(24);
     this->searchCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->searchCommand.setFillColor(sf::Color::Green);
+    this->searchCommand.setFillColor(sf::Color::Black);
     this->searchCommand.setPosition({pos.x, pos.y + 160});
 
     this->saveCommand.setString("How to save file: save filename");
     this->saveCommand.setCharacterSize(24);
     this->saveCommand.setFont(Fonts::getFont(OPEN_SANS));
-    this->saveCommand.setFillColor(sf::Color::Green);
+    this->saveCommand.setFillColor(sf::Color::Black);
     this->saveCommand.setPosition({pos.x, pos.y + 190});
 }
 

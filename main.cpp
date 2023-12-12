@@ -1,4 +1,3 @@
-// #include "includes/Helpers/helpers.h"
 #include "includes/Application/Application.h"
 #include "includes/Background/Background.h"
 #include "includes/BuildFileTree/BuildFileTree.h"
@@ -41,7 +40,7 @@ int main()
     Background wallpaper({0, 0});
     // TextInput commandLine(false, {800, 100}, {430, 850}, 670);
     // TextInput FileInput(true, {700, 500}, {500, 300}, 630);
-    TypingBox commandLine(30, sf::Vector2f(800, 100), sf::Vector2f(420, 850), sf::Color::Red, sf::Color::White, false, false, "", false);
+    TypingBox commandLine(30, sf::Vector2f(800, 100), sf::Vector2f(420, 850), sf::Color::White, sf::Color::Black, false, false, "", false);
     TypingBox fileInput(30, sf::Vector2f(650, 500), sf::Vector2f(580, 300), sf::Color::Red, sf::Color::White, false, true);
     commandLine.setLimit(false);
     commandLine.setFont(Fonts::getFont(OPEN_SANS));
